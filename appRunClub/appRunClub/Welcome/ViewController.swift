@@ -38,10 +38,13 @@ class ViewController: UIViewController {
         loginButton.setTitle("Login", for: .normal)
         loginButton.layer.cornerRadius = 20.0
         loginButton.clipsToBounds = true
+        //registerButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
     }
 
-    @IBAction func tappedRegisterButton(_ sender: Any) {
+    @IBAction func tappedLoginButton(_ sender: Any) {
+        let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
+        
+        navigationController?.pushViewController(login, animated: true)
     }
-    
 }
 
