@@ -54,6 +54,9 @@
                                 <rect key="frame" x="300" y="545" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedForgotPasswordButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nOM-Np-ipD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2O-Sq-pvp">
                                 <rect key="frame" x="20" y="630" width="355" height="55"/>
@@ -62,6 +65,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="tappedSubmitButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IvD-OQ-AfP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yp-xZ-iDf">
                                 <rect key="frame" x="164" y="695" width="36" height="17"/>
@@ -77,6 +83,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedToSignUpButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UKK-fC-SfC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -107,6 +116,17 @@
                             <constraint firstItem="b2t-Ob-McG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="320" id="zRB-oH-JtN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dontHaveAnAccountLabel" destination="4Yp-xZ-iDf" id="H2U-9K-hrf"/>
+                        <outlet property="emailLabel" destination="LBo-QZ-um9" id="Y3Z-Va-nUh"/>
+                        <outlet property="emailTextField" destination="b2t-Ob-McG" id="acN-Za-hJM"/>
+                        <outlet property="logInLabel" destination="XPs-6d-Psh" id="Bfs-9w-tfK"/>
+                        <outlet property="passwordForgotButton" destination="Wko-Fd-KeW" id="e3a-Ex-GgO"/>
+                        <outlet property="passwordLabel" destination="aoS-pf-CRA" id="1aC-Ja-CvE"/>
+                        <outlet property="passwordTextField" destination="4Ws-Yt-WGp" id="JRg-WF-PzU"/>
+                        <outlet property="submitButton" destination="J2O-Sq-pvp" id="70h-2K-lWu"/>
+                        <outlet property="toSignUpButton" destination="LZf-4W-2PJ" id="MO1-Ux-QZ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
