@@ -35,10 +35,12 @@ class ViewController: UIViewController {
         registerButton.setTitle("Cadastro", for: .normal)
         registerButton.layer.cornerRadius = 20.0
         registerButton.clipsToBounds = true
+        registerButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
         loginButton.setTitle("Login", for: .normal)
         loginButton.layer.cornerRadius = 20.0
         loginButton.clipsToBounds = true
-        //registerButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+        loginButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+        
     }
 
     @IBAction func tappedLoginButton(_ sender: Any) {
