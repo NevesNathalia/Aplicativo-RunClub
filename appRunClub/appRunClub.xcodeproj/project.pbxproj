@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42D72D2BBA0642007C0289 /* resetPasswordViewController.storyboard */; };
+		2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42D72F2BBA0661007C0289 /* ResetPasswordViewController.swift */; };
 		2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3F4E22BAE0B3D009E5E2A /* LoginViewController.storyboard */; };
 		2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3F4E42BAE0B55009E5E2A /* LoginViewController.swift */; };
 		2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD4BDA2BA9C73F0052CD7A /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C42D72D2BBA0642007C0289 /* resetPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = resetPasswordViewController.storyboard; sourceTree = "<group>"; };
+		2C42D72F2BBA0661007C0289 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		2CB3F4E22BAE0B3D009E5E2A /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		2CB3F4E42BAE0B55009E5E2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2CBD4BD72BA9C73F0052CD7A /* appRunClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appRunClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C42D72C2BBA0619007C0289 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2C42D72D2BBA0642007C0289 /* resetPasswordViewController.storyboard */,
+				2C42D72F2BBA0661007C0289 /* ResetPasswordViewController.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
 		2CB3F4DF2BAE09A2009E5E2A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				2C42D72C2BBA0619007C0289 /* ResetPassword */,
 				2CB3F4E12BAE0B28009E5E2A /* Login */,
 				2CB3F4E02BAE0A9E009E5E2A /* Welcome */,
 				2CB3F4DF2BAE09A2009E5E2A /* Resource */,
@@ -159,6 +173,7 @@
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
+				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +186,7 @@
 			files = (
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
+				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
 			);
