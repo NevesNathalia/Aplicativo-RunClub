@@ -47,6 +47,12 @@ class LoginViewController: UIViewController {
         // Corner Radius
         emailTextField.layer.cornerRadius = 20.0
         passwordTextField.layer.cornerRadius = 20.0
+        // Keyboard Type
+        emailTextField.keyboardType = .emailAddress
+        passwordTextField.keyboardType = .default
+        // Security password
+        passwordTextField.isSecureTextEntry = true
+        
     }
     
     func configButtons() {
