@@ -31,12 +31,18 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // configurating Labels
+        configLabels(labelSignUp, text: "Sign Up", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0))
+        configLabels(labelNomeCompleto, text: "Nome Completo", textColor: .black)
+        configLabels(labelEmail, text: "Email", textColor: .black)
+        configLabels(labelSenha, text: "Senha", textColor: .black)
+        configLabels(labelJaPossuiConta, text: "Já possui conta?", textColor: .black)
         
     }
     
-    func configLabels() {
-        
+    func configLabels(_ label: UILabel, text: String, textColor: UIColor) {
+        label.text = text
+        label.textColor = textColor
     }
     
     func configTextFields() {
