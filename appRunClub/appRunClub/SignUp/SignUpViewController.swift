@@ -31,13 +31,20 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // configurating Labels
+        // configuring Labels
         configLabels(labelSignUp, text: "Sign Up", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0))
         configLabels(labelNomeCompleto, text: "Nome Completo", textColor: .black)
         configLabels(labelEmail, text: "Email", textColor: .black)
         configLabels(labelSenha, text: "Senha", textColor: .black)
         configLabels(labelJaPossuiConta, text: "Já possui conta?", textColor: .black)
+        // configuring Text Fields
+        configTextFields(textFieldNomeCompleto, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .default, isSecureTextEntry: false)
+        configTextFields(textFieldEmail, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .emailAddress, isSecureTextEntry: false)
+        configTextFields(textFieldSenha, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .default, isSecureTextEntry: true)
+        // configuring Buttons
+        configButtons(buttonSignUp, title: "Sign Up", setTitleColor: .white, backgroundColor: nil, borderColor: CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), cornerRadius: 20.0, borderWidth: 1.0, tintColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), clipsToBounds: true)
         
+        configButtons(buttonToLogIn, title: "Log In", setTitleColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), backgroundColor: nil, borderColor: nil, cornerRadius: nil, borderWidth: 0.0, tintColor: nil, clipsToBounds: false)
     }
     
     func configLabels(_ label: UILabel, text: String, textColor: UIColor) {
@@ -45,12 +52,22 @@ class SignUpViewController: UIViewController {
         label.textColor = textColor
     }
     
-    func configTextFields() {
-        
+    func configTextFields(_ textField: UITextField, cornerRadius: Double, borderWidth: Double, keyboardType: UIKeyboardType, isSecureTextEntry: Bool) {
+        textField.layer.cornerRadius = cornerRadius
+        textField.layer.borderWidth = borderWidth
+        textField.keyboardType = keyboardType
+        textField.isSecureTextEntry = isSecureTextEntry
     }
     
-    func configButtons() {
-        
+    func configButtons(_ button: UIButton, title: String?, setTitleColor: UIColor?, backgroundColor: UIColor?, borderColor: CGColor?, cornerRadius: Double?, borderWidth: Double?, tintColor: UIColor?, clipsToBounds: Bool?) {
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(setTitleColor, for: .normal)
+        button.backgroundColor = backgroundColor
+        button.layer.borderColor = borderColor
+        button.layer.cornerRadius = cornerRadius ?? 1.0
+        button.layer.borderWidth = borderWidth ?? 1.0
+        button.tintColor = tintColor
+        button.clipsToBounds = clipsToBounds ?? false
     }
     
     @IBAction func tappedButtonSignUp(_ sender: UIButton) {
