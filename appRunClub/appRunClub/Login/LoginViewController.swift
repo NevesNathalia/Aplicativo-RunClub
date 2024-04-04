@@ -26,11 +26,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var dontHaveAnAccountLabel: UILabel!
     
     @IBOutlet weak var toSignUpButton: UIButton!
+    
+    @IBOutlet weak var viewVerde: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLabels()
         configButtons()
         configTextFields()
+        configView(viewVerde, backgroundColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), cornerRadius: 60.0, borderWidth: 0.5, borderColor: CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0))
     }
     
     
@@ -79,15 +83,13 @@ class LoginViewController: UIViewController {
             
     }
     
-    func isValidEmail(_ email: String) -> Bool {
-        return true
+    func configView(_ view: UIView, backgroundColor: UIColor, cornerRadius: Double, borderWidth: Double, borderColor: CGColor) {
+        view.backgroundColor = backgroundColor
+        view.layer.cornerRadius = cornerRadius
+        view.layer.borderWidth = borderWidth
+        view.layer.borderColor = borderColor
     }
-    
-    func isValidPassword(_ senha: String) -> Bool {
-        return true
-    }
-    
-    
+
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
         
@@ -100,21 +102,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func tappedToSignUpButton(_ sender: UIButton) {
-        
-        guard let email = emailTextField.text, let senha = passwordTextField.text else {
-            // Se nao houver nada nos campos, saia do método
-            return
-        }
-        
-        if isValidEmail(email) && isValidPassword(senha) {
-            
-            print("Login bem sucedido")
-        } else {
-            
-            print("Email ou senha inválidos")
-        }
-        
-        
         
         let paraSignUp = UIStoryboard(name: String(describing: SignUpViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: SignUpViewController.self))
         
