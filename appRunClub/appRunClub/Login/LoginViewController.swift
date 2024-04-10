@@ -40,12 +40,14 @@ class LoginViewController: UIViewController {
     
     func configLabels() {
         // Text
-        logInLabel.text = "Log In"
+        logInLabel.text = "Cadastre-se"
         emailLabel.text = "Email"
         passwordLabel.text = "Senha"
         dontHaveAnAccountLabel.text = "Não possui uma conta?"
         // Colors
         logInLabel.textColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+        // Font
+        logInLabel.font = UIFont.systemFont(ofSize: 30.0, weight: .semibold)
     }
     
     func configTextFields() {
@@ -68,7 +70,7 @@ class LoginViewController: UIViewController {
     func configButtons() {
         //Setting Titles
         passwordForgotButton.setTitle("Esqueceu a senha?", for: .normal)
-        submitButton.setTitle("Log In", for: .normal)
+        submitButton.setTitle("Cadastrar", for: .normal)
         toSignUpButton.setTitle("Sign Up", for: .normal)
         // Colors
         passwordForgotButton.setTitleColor(UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), for: .normal)
@@ -80,6 +82,7 @@ class LoginViewController: UIViewController {
         submitButton.layer.borderWidth = 1.0
         submitButton.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
         submitButton.layer.borderColor = CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+        
             
     }
     
@@ -97,6 +100,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func tappedSubmitButton(_ sender: UIButton) {
+        
         
     }
     

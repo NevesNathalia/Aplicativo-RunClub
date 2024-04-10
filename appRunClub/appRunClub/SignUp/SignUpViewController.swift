@@ -32,11 +32,11 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // configuring Labels
-        configLabels(labelSignUp, text: "Sign Up", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0))
-        configLabels(labelNomeCompleto, text: "Nome Completo", textColor: .black)
-        configLabels(labelEmail, text: "Email", textColor: .black)
-        configLabels(labelSenha, text: "Senha", textColor: .black)
-        configLabels(labelJaPossuiConta, text: "Já possui conta?", textColor: .black)
+        configLabels(labelSignUp, text: "Sign Up", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), font: .systemFont(ofSize: 30.0, weight: .semibold))
+        configLabels(labelNomeCompleto, text: "Nome Completo", textColor: .black, font: nil)
+        configLabels(labelEmail, text: "Email", textColor: .black, font: nil)
+        configLabels(labelSenha, text: "Senha", textColor: .black, font: nil)
+        configLabels(labelJaPossuiConta, text: "Já possui conta?", textColor: .black, font: nil)
         // configuring Text Fields
         configTextFields(textFieldNomeCompleto, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .default, isSecureTextEntry: false)
         configTextFields(textFieldEmail, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .emailAddress, isSecureTextEntry: false)
@@ -47,9 +47,10 @@ class SignUpViewController: UIViewController {
         configButtons(buttonToLogIn, title: "Log In", setTitleColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), backgroundColor: nil, borderColor: nil, cornerRadius: nil, borderWidth: 0.0, tintColor: nil, clipsToBounds: false)
     }
     
-    func configLabels(_ label: UILabel, text: String, textColor: UIColor) {
+    func configLabels(_ label: UILabel, text: String, textColor: UIColor, font: UIFont?) {
         label.text = text
         label.textColor = textColor
+        label.font = font
     }
     
     func configTextFields(_ textField: UITextField, cornerRadius: Double, borderWidth: Double, keyboardType: UIKeyboardType, isSecureTextEntry: Bool) {
