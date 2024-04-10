@@ -17,6 +17,8 @@
 		2CBD4BE72BA9C7410052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE62BA9C7410052CD7A /* Base */; };
 		E64C17552BBC29940081A4C5 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C17542BBC29940081A4C5 /* SignUpViewController.storyboard */; };
 		E64C17572BBC29B00081A4C5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C17562BBC29B00081A4C5 /* SignUpViewController.swift */; };
+		E64C17C42BC70E1F0081A4C5 /* userSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C17C32BC70E1F0081A4C5 /* userSearchViewController.storyboard */; };
+		E64C17C62BC70E490081A4C5 /* userSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C17C52BC70E490081A4C5 /* userSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2CBD4BE82BA9C7410052CD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64C17542BBC29940081A4C5 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		E64C17562BBC29B00081A4C5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E64C17C32BC70E1F0081A4C5 /* userSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = userSearchViewController.storyboard; sourceTree = "<group>"; };
+		E64C17C52BC70E490081A4C5 /* userSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				E64C17C22BC70DC00081A4C5 /* userSearch */,
 				E64C17532BBC29700081A4C5 /* SignUp */,
 				2CB3F4E12BAE0B28009E5E2A /* Login */,
 				2CB3F4E02BAE0A9E009E5E2A /* Welcome */,
@@ -109,6 +114,15 @@
 				E64C17562BBC29B00081A4C5 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E64C17C22BC70DC00081A4C5 /* userSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E64C17C32BC70E1F0081A4C5 /* userSearchViewController.storyboard */,
+				E64C17C52BC70E490081A4C5 /* userSearchViewController.swift */,
+			);
+			path = userSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C17C42BC70E1F0081A4C5 /* userSearchViewController.storyboard in Resources */,
 				2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */,
 				E64C17552BBC29940081A4C5 /* SignUpViewController.storyboard in Resources */,
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
@@ -187,6 +202,7 @@
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
+				E64C17C62BC70E490081A4C5 /* userSearchViewController.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
 				E64C17572BBC29B00081A4C5 /* SignUpViewController.swift in Sources */,
 			);
