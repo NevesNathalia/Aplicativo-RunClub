@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // configuring Labels
-        configLabels(labelSignUp, text: "Sign Up", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), font: .systemFont(ofSize: 30.0, weight: .semibold))
+        configLabels(labelSignUp, text: "Cadastre-se", textColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), font: .systemFont(ofSize: 30.0, weight: .semibold))
         configLabels(labelNomeCompleto, text: "Nome Completo", textColor: .black, font: nil)
         configLabels(labelEmail, text: "Email", textColor: .black, font: nil)
         configLabels(labelSenha, text: "Senha", textColor: .black, font: nil)
@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
         configTextFields(textFieldEmail, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .emailAddress, isSecureTextEntry: false)
         configTextFields(textFieldSenha, cornerRadius: 20.0, borderWidth: 1.0, keyboardType: .default, isSecureTextEntry: true)
         // configuring Buttons
-        configButtons(buttonSignUp, title: "Sign Up", setTitleColor: .white, backgroundColor: nil, borderColor: CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), cornerRadius: 20.0, borderWidth: 1.0, tintColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), clipsToBounds: true)
+        configButtons(buttonSignUp, title: "Cadastrar", setTitleColor: .white, backgroundColor: nil, borderColor: CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), cornerRadius: 20.0, borderWidth: 1.0, tintColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), clipsToBounds: true)
         
         configButtons(buttonToLogIn, title: "Log In", setTitleColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), backgroundColor: nil, borderColor: nil, cornerRadius: nil, borderWidth: 0.0, tintColor: nil, clipsToBounds: false)
     }

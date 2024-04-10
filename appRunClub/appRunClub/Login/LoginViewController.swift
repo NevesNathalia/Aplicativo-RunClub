@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     
     func configLabels() {
         // Text
-        logInLabel.text = "Cadastre-se"
+        logInLabel.text = "Log In"
         emailLabel.text = "Email"
         passwordLabel.text = "Senha"
         dontHaveAnAccountLabel.text = "Não possui uma conta?"
@@ -70,8 +70,8 @@ class LoginViewController: UIViewController {
     func configButtons() {
         //Setting Titles
         passwordForgotButton.setTitle("Esqueceu a senha?", for: .normal)
-        submitButton.setTitle("Cadastrar", for: .normal)
-        toSignUpButton.setTitle("Sign Up", for: .normal)
+        submitButton.setTitle("Log In", for: .normal)
+        toSignUpButton.setTitle("Cadastre-se", for: .normal)
         // Colors
         passwordForgotButton.setTitleColor(UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), for: .normal)
         submitButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
