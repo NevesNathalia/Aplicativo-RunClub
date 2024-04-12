@@ -17,33 +17,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configLabels()
-        configButtons()
+        configLabels(label: welcomeLabel, text: "Bem Vindo ao", font: .systemFont(ofSize: 30, weight: .semibold), aligment: .center)
+        configLabels(label: nameLabel, text: "RunClub!", font: .systemFont(ofSize: 30, weight: .semibold), aligment: .center)
+        configButtons(button: registerButton)
+        configButtons(button: loginButton)
+        registerButton.setTitle("Cadastro", for: .normal)
+        loginButton.setTitle("Login", for: .normal)
     }
 
-    func configLabels() {
-        welcomeLabel.text = "Bem vindo ao"
-        nameLabel.text = "RunClub!"
-        welcomeLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
-        nameLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
-        welcomeLabel.textAlignment = .center
-        nameLabel.textAlignment = .center
-        
+    func configLabels(label: UILabel, text: String, font: UIFont, aligment: NSTextAlignment) {
+        label.text = text
+        label.font = font
+        label.textAlignment = aligment
     }
     
-    func configButtons() {
-        registerButton.setTitle("Cadastro", for: .normal)
-        registerButton.layer.cornerRadius = 20.0
-        registerButton.clipsToBounds = true
-        loginButton.setTitle("Login", for: .normal)
-        loginButton.layer.cornerRadius = 20.0
-        loginButton.clipsToBounds = true
-        //registerButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+    
+    func configButtons(button: UIButton) {
+        button.layer.cornerRadius = 20.0
+        button.clipsToBounds = true
+        button.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
     }
 
     @IBAction func tappedLoginButton(_ sender: Any) {
         let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
-        
+    
         navigationController?.pushViewController(login, animated: true)
     }
 }
