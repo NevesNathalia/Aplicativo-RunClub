@@ -25,10 +25,32 @@ class EditProfileUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configLabel(label: aboutLabel, text: "Sobre mim", font: .systemFont(ofSize: 16, weight: .semibold), alignment: .left)
+        configLabel(label: interestLabel, text: "Interesses Esportivos", font: .systemFont(ofSize: 16, weight: .semibold), alignment: .left)
+        configLabel(label: lifestyleLabel, text: "Estilo de vida", font: .systemFont(ofSize: 16, weight: .semibold), alignment: .left)
+        configLabel(label: moreLabel, text: "Extra", font: .systemFont(ofSize: 16, weight: .semibold), alignment: .left)
+        configLabel(label: viewPhotoLabel, text: "Fotos de Visualização", font: .systemFont(ofSize: 20, weight: .semibold), alignment: .center)
+        configTextField(textField: aboutTextField)
+        configTextField(textField: interestTextField)
+        configTextField(textField: lifestyleTextField)
+        configTextField(textField: moreTextField)
+        configImageView(image: userImage1)
+        configImageView(image: userImage2)
+        configImageView(image: userImage3)
+        configImageView(image: userImage4)
     }
     
-
-  
-
+    func configLabel(label: UILabel, text: String, font: UIFont, alignment: NSTextAlignment) {
+        label.text = text
+        label.font = font
+        label.textAlignment = alignment
+    }
+    
+    func configTextField(textField: UITextField) {
+        textField.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 0.26)
+    }
+    
+    func configImageView(image: UIImageView) {
+        image.image = UIImage(named: "profile")
+    }
 }
