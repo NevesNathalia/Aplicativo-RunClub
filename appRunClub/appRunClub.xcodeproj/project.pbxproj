@@ -19,6 +19,8 @@
 		2CBD4BE22BA9C73F0052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE12BA9C73F0052CD7A /* Base */; };
 		2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE32BA9C7410052CD7A /* Assets.xcassets */; };
 		2CBD4BE72BA9C7410052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE62BA9C7410052CD7A /* Base */; };
+		E658190F2BCEA47E008D5742 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E658190E2BCEA47E008D5742 /* SignUpViewController.storyboard */; };
+		E65819112BCEA484008D5742 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819102BCEA484008D5742 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		2CBD4BE32BA9C7410052CD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBD4BE62BA9C7410052CD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBD4BE82BA9C7410052CD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E658190E2BCEA47E008D5742 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUpViewController.storyboard; path = ../../../../.Trash/SignUpViewController.storyboard; sourceTree = "<group>"; };
+		E65819102BCEA484008D5742 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../../../../.Trash/SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +122,21 @@
 				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
 				2C42D72C2BBA0619007C0289 /* ResetPassword */,
 				2CB3F4E12BAE0B28009E5E2A /* Login */,
+				E658190D2BCEA449008D5742 /* SignUp */,
 				2CB3F4E02BAE0A9E009E5E2A /* Welcome */,
 				2CB3F4DF2BAE09A2009E5E2A /* Resource */,
 				2CBD4BE82BA9C7410052CD7A /* Info.plist */,
 			);
 			path = appRunClub;
+			sourceTree = "<group>";
+		};
+		E658190D2BCEA449008D5742 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E65819102BCEA484008D5742 /* SignUpViewController.swift */,
+				E658190E2BCEA47E008D5742 /* SignUpViewController.storyboard */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,7 @@
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
+				E658190F2BCEA47E008D5742 /* SignUpViewController.storyboard in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
 			);
@@ -200,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
+				E65819112BCEA484008D5742 /* SignUpViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
