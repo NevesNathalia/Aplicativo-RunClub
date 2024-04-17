@@ -18,5 +18,20 @@ class ChatViewController: UIViewController {
 
        
     }
+    private func configTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+}
+
+extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
 }
