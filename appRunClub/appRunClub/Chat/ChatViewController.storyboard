@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-UK-heV">
-                                <rect key="frame" x="16" y="70" width="42" height="21"/>
+                                <rect key="frame" x="16" y="35" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.10588235294117647" green="0.2627450980392157" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7O-Rg-kkF">
-                                <rect key="frame" x="259" y="63" width="100" height="40"/>
+                                <rect key="frame" x="259" y="35" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6Qf-ey-ZvG"/>
                                     <constraint firstAttribute="height" constant="40" id="X9k-eO-NUp"/>
@@ -33,20 +33,20 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-xg-N2t">
-                                <rect key="frame" x="0.0" y="127" width="375" height="540"/>
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="u7O-Rg-kkF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="43" id="17L-91-I7C"/>
-                            <constraint firstItem="KmK-UK-heV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="59g-hk-B2w"/>
+                            <constraint firstItem="u7O-Rg-kkF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="17L-91-I7C"/>
+                            <constraint firstItem="KmK-UK-heV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="59g-hk-B2w"/>
                             <constraint firstItem="G8D-xg-N2t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OTe-SA-Ewt"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G8D-xg-N2t" secondAttribute="trailing" id="aP8-Vi-ONl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="G8D-xg-N2t" secondAttribute="bottom" id="b5G-7Y-9a2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u7O-Rg-kkF" secondAttribute="trailing" constant="16" id="cgf-53-I6S"/>
-                            <constraint firstItem="G8D-xg-N2t" firstAttribute="top" secondItem="u7O-Rg-kkF" secondAttribute="bottom" constant="24" id="smi-wA-we9"/>
+                            <constraint firstItem="G8D-xg-N2t" firstAttribute="top" secondItem="u7O-Rg-kkF" secondAttribute="bottom" constant="10" id="smi-wA-we9"/>
                             <constraint firstItem="KmK-UK-heV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="wur-n6-16j"/>
                         </constraints>
                     </view>

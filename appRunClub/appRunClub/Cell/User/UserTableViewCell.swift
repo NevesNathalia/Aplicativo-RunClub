@@ -22,7 +22,6 @@ class UserTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configLabels()
-        
     }
     
     func configLabels() {
