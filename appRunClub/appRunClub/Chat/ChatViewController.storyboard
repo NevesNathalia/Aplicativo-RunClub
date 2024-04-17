@@ -19,7 +19,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-UK-heV">
                                 <rect key="frame" x="16" y="70" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.2627450980392157" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7O-Rg-kkF">
@@ -28,6 +28,7 @@
                                     <constraint firstAttribute="width" constant="100" id="6Qf-ey-ZvG"/>
                                     <constraint firstAttribute="height" constant="40" id="X9k-eO-NUp"/>
                                 </constraints>
+                                <color key="tintColor" red="0.30588235294117649" green="0.53725490196078429" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>

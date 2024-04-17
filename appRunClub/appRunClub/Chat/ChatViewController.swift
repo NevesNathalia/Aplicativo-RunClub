@@ -15,9 +15,23 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        configTableView()
+        configLabel(label: chatLabel)
+        
     }
+    
+    func configLabel(label: UILabel) {
+        label.text = "Chat"
+        label.font = .systemFont(ofSize: 35, weight: .bold)
+        label.tintColor = UIColor(red: 27/255, green: 67/255, blue: 50/255, alpha: 1.0)
+    }
+    func configButton(button: UIButton) {
+        button.setTitle("+ Grupo", for: .normal)
+        button.layer.cornerRadius = 100
+        button.clipsToBounds = true
+        button.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+    }
+    
     private func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
