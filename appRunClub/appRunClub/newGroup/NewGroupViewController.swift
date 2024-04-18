@@ -9,6 +9,10 @@ import UIKit
 
 class NewGroupViewController: UIViewController {
 
+    @IBOutlet weak var addMembersLabel: UILabel!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
