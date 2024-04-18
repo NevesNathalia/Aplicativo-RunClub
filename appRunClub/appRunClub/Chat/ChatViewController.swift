@@ -39,6 +39,13 @@ class ChatViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.identifier)
     }
+    
+    
+    @IBAction func tappedListContactsButton(_ sender: Any) {
+        let newGroup = UIStoryboard(name: String(describing: NewGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: NewGroupViewController.self))
+        
+        navigationController?.pushViewController(newGroup, animated: true)
+    }
 }
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
