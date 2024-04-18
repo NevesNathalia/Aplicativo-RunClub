@@ -26,6 +26,8 @@
 		2CBD4BE22BA9C73F0052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE12BA9C73F0052CD7A /* Base */; };
 		2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE32BA9C7410052CD7A /* Assets.xcassets */; };
 		2CBD4BE72BA9C7410052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE62BA9C7410052CD7A /* Base */; };
+		2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */; };
+		2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		2CBD4BE32BA9C7410052CD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBD4BE62BA9C7410052CD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBD4BE82BA9C7410052CD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
+		2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGroupViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
 				2C41B7172BD0061A00EF5C38 /* Cell */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
@@ -185,6 +190,15 @@
 				2CBD4BE82BA9C7410052CD7A /* Info.plist */,
 			);
 			path = appRunClub;
+			sourceTree = "<group>";
+		};
+		2CCF91A82BD143790059BC56 /* newGroup */ = {
+			isa = PBXGroup;
+			children = (
+				2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */,
+				2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */,
+			);
+			path = newGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
+				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +285,7 @@
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
+				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
