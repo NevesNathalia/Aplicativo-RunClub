@@ -15,8 +15,25 @@ class NewGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configTableView()
 
        
     }
+    
+    private func configTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+}
+
+extension NewGroupViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
 }
