@@ -9,27 +9,26 @@ import UIKit
 
 class NewGroupViewController: UIViewController {
 
-    @IBOutlet weak var addMembersLabel: UILabel!
+    
+    @IBOutlet weak var advanceButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-        configLabel(label: addMembersLabel)
         configTextField(textField: searchTextField)
-
+        configButton()
     }
     
-    func configLabel(label: UILabel) {
-        label.text = "Adicionar Amigos"
-        label.font = .systemFont(ofSize: 17, weight: .semibold)
-        label.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+    func configButton() {
+        advanceButton.setTitle("Avançar", for: .normal)
+        advanceButton.tintColor = .black
     }
     
     func configTextField(textField: UITextField) {
         textField.placeholder = "Pesquisar"
-        textField.layer.borderWidth = 10
+        textField.layer.cornerRadius = 10
         textField.clipsToBounds = true
         textField.backgroundColor = UIColor(red: 118/255, green: 118/255, blue: 128/255, alpha: 0.14)
         

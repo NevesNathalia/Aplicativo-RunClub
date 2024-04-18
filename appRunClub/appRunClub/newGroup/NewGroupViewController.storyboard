@@ -16,13 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-wG-Cr3">
-                                <rect key="frame" x="40" y="59" width="313" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-Ya-3CV">
-                                <rect key="frame" x="20" y="88" width="353" height="40"/>
+                                <rect key="frame" x="20" y="59" width="353" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4A7-fM-4fe"/>
                                 </constraints>
@@ -30,18 +25,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-P1-Xkb">
-                                <rect key="frame" x="0.0" y="138" width="393" height="680"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-10-mYV">
+                                <rect key="frame" x="298" y="19" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="6ge-wG-Cr3" secondAttribute="bottom" constant="8" id="1J1-1X-Aqe"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6ge-wG-Cr3" secondAttribute="trailing" constant="40" id="ATf-U3-w2t"/>
+                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="7B1-10-mYV" secondAttribute="bottom" constant="5" id="65L-oJ-zFA"/>
                             <constraint firstItem="gnE-P1-Xkb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EIs-W4-9ws"/>
-                            <constraint firstItem="6ge-wG-Cr3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="MdO-hY-qaf"/>
-                            <constraint firstItem="6ge-wG-Cr3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="SWG-Nc-KH7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7B1-10-mYV" secondAttribute="trailing" constant="20" id="OrZ-kT-Sug"/>
+                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TC5-uT-OJ3"/>
                             <constraint firstItem="YPz-Ya-3CV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TFU-TT-4ce"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gnE-P1-Xkb" secondAttribute="trailing" id="YGO-Sk-Jcg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YPz-Ya-3CV" secondAttribute="trailing" constant="20" id="bmG-ao-iiL"/>
@@ -50,8 +49,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addMembersLabel" destination="6ge-wG-Cr3" id="pU5-wA-qzc"/>
-                        <outlet property="searchTextField" destination="YPz-Ya-3CV" id="H1U-S7-EXb"/>
+                        <outlet property="advanceButton" destination="7B1-10-mYV" id="ffP-41-bTJ"/>
+                        <outlet property="searchTextField" destination="YPz-Ya-3CV" id="rt2-x0-oFM"/>
                         <outlet property="tableView" destination="gnE-P1-Xkb" id="TgI-VY-Ikp"/>
                     </connections>
                 </viewController>

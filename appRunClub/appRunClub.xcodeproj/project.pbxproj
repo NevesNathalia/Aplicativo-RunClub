@@ -82,6 +82,7 @@
 			children = (
 				2C41B7132BCFFB4E00EF5C38 /* ChatViewController.swift */,
 				2C41B7152BCFFB6500EF5C38 /* ChatViewController.storyboard */,
+				2C41B7172BD0061A00EF5C38 /* Cell */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -177,9 +178,8 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
-				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
-				2C41B7172BD0061A00EF5C38 /* Cell */,
+				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
 				2C2EB5142BCD6BB200CE5AEA /* EditProfileUser */,
 				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
