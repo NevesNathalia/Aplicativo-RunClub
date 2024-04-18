@@ -37,6 +37,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
+                        <connections>
+                            <action selector="tappedEnableButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GeH-Oi-SDy"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

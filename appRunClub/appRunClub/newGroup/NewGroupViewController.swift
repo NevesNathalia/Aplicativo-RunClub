@@ -9,7 +9,6 @@ import UIKit
 
 class NewGroupViewController: UIViewController {
 
-    
     @IBOutlet weak var advanceButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -42,12 +41,16 @@ class NewGroupViewController: UIViewController {
 
 extension NewGroupViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: ContactsTableViewCell.identifier, for: indexPath) as? ContactsTableViewCell
+        cell?.setupCell(details: Contacts(image: UIImage(systemName: "person.circle.fill") ?? UIImage(), name: "Contato", isEnabled: true))
+        return cell ?? UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 57
+    }
 }
