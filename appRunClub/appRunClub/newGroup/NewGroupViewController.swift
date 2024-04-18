@@ -31,12 +31,12 @@ class NewGroupViewController: UIViewController {
         textField.layer.cornerRadius = 10
         textField.clipsToBounds = true
         textField.backgroundColor = UIColor(red: 118/255, green: 118/255, blue: 128/255, alpha: 0.14)
-        
     }
     
     private func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(ContactsTableViewCell.nib(), forCellReuseIdentifier: ContactsTableViewCell.identifier)
     }
 }
 
