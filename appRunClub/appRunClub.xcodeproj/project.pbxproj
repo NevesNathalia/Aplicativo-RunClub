@@ -18,6 +18,8 @@
 		2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42D72F2BBA0661007C0289 /* ResetPasswordViewController.swift */; };
 		2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C64EBF12BCC0E6B00CBA85F /* ProfileUserViewController.storyboard */; };
 		2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64EBF22BCC0E6B00CBA85F /* ProfileUserViewController.swift */; };
+		2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD7C162BD198C10006BCEE /* ContactsTableViewCell.swift */; };
+		2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD7C172BD198C10006BCEE /* ContactsTableViewCell.xib */; };
 		2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3F4E22BAE0B3D009E5E2A /* LoginViewController.storyboard */; };
 		2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3F4E42BAE0B55009E5E2A /* LoginViewController.swift */; };
 		2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD4BDA2BA9C73F0052CD7A /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 		2C42D72F2BBA0661007C0289 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		2C64EBF12BCC0E6B00CBA85F /* ProfileUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileUserViewController.storyboard; sourceTree = "<group>"; };
 		2C64EBF22BCC0E6B00CBA85F /* ProfileUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserViewController.swift; sourceTree = "<group>"; };
+		2CAD7C162BD198C10006BCEE /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		2CAD7C172BD198C10006BCEE /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 		2CB3F4E22BAE0B3D009E5E2A /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		2CB3F4E42BAE0B55009E5E2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2CBD4BD72BA9C73F0052CD7A /* appRunClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appRunClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,23 @@
 			path = ProfileUser;
 			sourceTree = "<group>";
 		};
+		2CAD7C142BD1988C0006BCEE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2CAD7C152BD198990006BCEE /* Contacts */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2CAD7C152BD198990006BCEE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				2CAD7C162BD198C10006BCEE /* ContactsTableViewCell.swift */,
+				2CAD7C172BD198C10006BCEE /* ContactsTableViewCell.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		2CB3F4DF2BAE09A2009E5E2A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +218,7 @@
 			children = (
 				2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */,
 				2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */,
+				2CAD7C142BD1988C0006BCEE /* Cell */,
 			);
 			path = newGroup;
 			sourceTree = "<group>";
@@ -265,6 +287,7 @@
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
+				2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
@@ -287,6 +310,7 @@
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
+				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
