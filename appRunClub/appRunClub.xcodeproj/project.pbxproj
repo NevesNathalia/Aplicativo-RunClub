@@ -31,6 +31,12 @@
 		2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */; };
 		E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65819402BD692FF008D5742 /* SignUpViewController.storyboard */; };
 		E65819432BD69308008D5742 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819422BD69308008D5742 /* SignUpViewController.swift */; };
+		E65819482BD69804008D5742 /* SearchUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65819452BD69804008D5742 /* SearchUserViewController.storyboard */; };
+		E65819492BD69804008D5742 /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819462BD69804008D5742 /* SearchUserViewController.swift */; };
+		E658194D2BD6986E008D5742 /* infoOtherUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E658194A2BD6986D008D5742 /* infoOtherUserViewController.storyboard */; };
+		E658194E2BD6986E008D5742 /* infoOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658194B2BD6986D008D5742 /* infoOtherUserViewController.swift */; };
+		E65819522BD69893008D5742 /* homeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E658194F2BD69893008D5742 /* homeViewController.storyboard */; };
+		E65819532BD69893008D5742 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819502BD69893008D5742 /* homeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGroupViewController.storyboard; sourceTree = "<group>"; };
 		E65819402BD692FF008D5742 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUpViewController.storyboard; path = ../SignUpViewController.storyboard; sourceTree = "<group>"; };
 		E65819422BD69308008D5742 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		E65819442BD69804008D5742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchUserViewController.storyboard; sourceTree = "<group>"; };
+		E65819462BD69804008D5742 /* SearchUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
+		E658194A2BD6986D008D5742 /* infoOtherUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = infoOtherUserViewController.storyboard; sourceTree = "<group>"; };
+		E658194B2BD6986D008D5742 /* infoOtherUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoOtherUserViewController.swift; sourceTree = "<group>"; };
+		E658194F2BD69893008D5742 /* homeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = homeViewController.storyboard; sourceTree = "<group>"; };
+		E65819502BD69893008D5742 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +207,9 @@
 				2C41B71D2BD0069F00EF5C38 /* Model */,
 				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
+				E658194C2BD6986D008D5742 /* InfoOtherUser */,
+				E65819512BD69893008D5742 /* home */,
+				E65819472BD69804008D5742 /* searchUserScreen */,
 				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
 				2C42D72C2BBA0619007C0289 /* ResetPassword */,
 				E658193F2BD692DD008D5742 /* SignUp */,
@@ -224,6 +239,36 @@
 			);
 			name = SignUp;
 			path = ../../../.Trash/SignUp;
+			sourceTree = "<group>";
+		};
+		E65819472BD69804008D5742 /* searchUserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E65819452BD69804008D5742 /* SearchUserViewController.storyboard */,
+				E65819462BD69804008D5742 /* SearchUserViewController.swift */,
+			);
+			name = searchUserScreen;
+			path = "../../../Documents/iOS/Screens/searchUser(RunClub)/searchUser(RunClub)/searchUserScreen";
+			sourceTree = "<group>";
+		};
+		E658194C2BD6986D008D5742 /* InfoOtherUser */ = {
+			isa = PBXGroup;
+			children = (
+				E658194A2BD6986D008D5742 /* infoOtherUserViewController.storyboard */,
+				E658194B2BD6986D008D5742 /* infoOtherUserViewController.swift */,
+			);
+			name = InfoOtherUser;
+			path = "../../../Documents/iOS/Screens/searchUser(RunClub)/searchUser(RunClub)/InfoOtherUser";
+			sourceTree = "<group>";
+		};
+		E65819512BD69893008D5742 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E658194F2BD69893008D5742 /* homeViewController.storyboard */,
+				E65819502BD69893008D5742 /* homeViewController.swift */,
+			);
+			name = home;
+			path = "../../../Documents/iOS/Screens/searchUser(RunClub)/searchUser(RunClub)/home";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,14 +331,17 @@
 			files = (
 				2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */,
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
+				E65819482BD69804008D5742 /* SearchUserViewController.storyboard in Resources */,
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
+				E658194D2BD6986E008D5742 /* infoOtherUserViewController.storyboard in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
+				E65819522BD69893008D5742 /* homeViewController.storyboard in Resources */,
 				E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,14 +354,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
+				E658194E2BD6986E008D5742 /* infoOtherUserViewController.swift in Sources */,
 				2C41B71C2BD0066A00EF5C38 /* UserTableViewCell.swift in Sources */,
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
+				E65819492BD69804008D5742 /* SearchUserViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
 				E65819432BD69308008D5742 /* SignUpViewController.swift in Sources */,
 				2CAD7C1B2BD1995C0006BCEE /* Contacts.swift in Sources */,
+				E65819532BD69893008D5742 /* homeViewController.swift in Sources */,
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
@@ -338,6 +389,14 @@
 				2CBD4BE62BA9C7410052CD7A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E65819452BD69804008D5742 /* SearchUserViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E65819442BD69804008D5742 /* Base */,
+			);
+			name = SearchUserViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
