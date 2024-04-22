@@ -107,9 +107,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func tappedToSignUpButton(_ sender: UIButton) {
         
-        //let paraSignUp = UIStoryboard(name: String(describing: SignUpViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: SignUpViewController.self))
+        let paraSignUp = UIStoryboard(name: String(describing: SignUpViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: SignUpViewController.self))
         
-        //navigationController?.pushViewController(paraSignUp, animated: true)
+        navigationController?.pushViewController(paraSignUp, animated: true)
     }
     
 
