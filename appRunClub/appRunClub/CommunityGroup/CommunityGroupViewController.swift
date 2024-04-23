@@ -19,8 +19,32 @@ class CommunityGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
       
+    }
+    
+    func configView(view: UIView, color: UIColor) {
+        view.backgroundColor = color
+    }
+    
+    func configImageView(image: UIImageView) {
+        image.image = UIImage(named: "profile")
+    }
+    
+    func configLabel(label: UILabel) {
+        label.text = "Contato"
+        label.font = .systemFont(ofSize: 16)
+    }
+    
+    func configTextField(textField: UITextField) {
+        textField.backgroundColor = .systemGray6
+        textField.placeholder = "Digitar"
+        textField.layer.cornerRadius = 20
+        textField.clipsToBounds = true
+    }
+    
+    func configButton(button: UIButton) {
+        button.setImage(UIImage(systemName: "paperplane.fill"), for: .normal)
+        button.tintColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.76)
     }
     
 
