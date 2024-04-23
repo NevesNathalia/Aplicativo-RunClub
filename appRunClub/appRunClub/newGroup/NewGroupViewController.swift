@@ -49,9 +49,9 @@ class NewGroupViewController: UIViewController {
     
     
     @IBAction func tappedAdvanceButton(_ sender: Any) {
-//        let customGroup = UIStoryboard(name: String(describing: CustomGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CustomGroupViewController.self))
-//
-//        navigationController?.pushViewController(customGroup, animated: true)
+        let customGroup = UIStoryboard(name: String(describing: CustomGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CustomGroupViewController.self)) as? CustomGroupViewController
+
+        navigationController?.pushViewController(customGroup ?? UIViewController(), animated: true)
         
     }
     

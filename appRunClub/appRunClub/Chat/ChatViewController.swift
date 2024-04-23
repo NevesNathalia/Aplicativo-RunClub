@@ -42,9 +42,9 @@ class ChatViewController: UIViewController {
     
     
     @IBAction func tappedListContactsButton(_ sender: Any) {
-        let newGroup = UIStoryboard(name: String(describing: NewGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: NewGroupViewController.self))
+        let newGroup = UIStoryboard(name: String(describing: NewGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: NewGroupViewController.self)) as? NewGroupViewController
         
-        navigationController?.pushViewController(newGroup, animated: true)
+        navigationController?.pushViewController(newGroup ?? UIViewController(), animated: true)
     }
 }
 

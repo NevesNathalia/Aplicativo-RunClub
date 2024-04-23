@@ -95,14 +95,16 @@ class LoginViewController: UIViewController {
 
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
+        let resetPasword = UIStoryboard(name: String(describing: ResetPasswordViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ResetPasswordViewController.self)) as? ResetPasswordViewController
         
+        navigationController?.pushViewController(resetPasword ?? UIViewController(), animated: true)
         
     }
     
     @IBAction func tappedSubmitButton(_ sender: UIButton) {
-        let resetPasword = UIStoryboard(name: String(describing: ResetPasswordViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ResetPasswordViewController.self)) as? ResetPasswordViewController
+        let tabBar = UIStoryboard(name: String(describing: TabBarController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: TabBarController.self)) as? TabBarController
         
-        navigationController?.pushViewController(resetPasword ?? UIViewController(), animated: true)
+        navigationController?.pushViewController(tabBar ?? UIViewController(), animated: true)
         
     }
     
