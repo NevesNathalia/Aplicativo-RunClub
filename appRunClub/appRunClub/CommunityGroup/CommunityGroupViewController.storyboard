@@ -56,6 +56,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="tappedBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tZG-A8-3mI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.64313727620000005" green="0.83529412749999998" blue="0.77647060160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

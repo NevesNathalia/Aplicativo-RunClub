@@ -9,7 +9,6 @@ import UIKit
 
 class CommunityGroupViewController: UIViewController {
 
-    
     @IBOutlet weak var viewTop: UIView!
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -19,7 +18,12 @@ class CommunityGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        configView(view: viewTop, color: UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.76))
+        configImageView(image: personImage)
+        configLabel(label: nameLabel)
+        configView(view: viewBottom, color: UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.76))
+        configTextField(textField: mensageTextField)
+        configButton(button: toSendButton)
     }
     
     func configView(view: UIView, color: UIColor) {
@@ -47,6 +51,10 @@ class CommunityGroupViewController: UIViewController {
         button.tintColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.76)
     }
     
-
-
+    @IBAction func tappedBackButton(_ sender: Any) {
+        let chat = UIStoryboard(name: String(describing: ChatViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ChatViewController.self))
+        
+        navigationController?.pushViewController(chat, animated: true)
+        
+    }
 }
