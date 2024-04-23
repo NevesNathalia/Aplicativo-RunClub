@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C171B6E2BD7475F00E66113 /* CustomGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C171B6D2BD7475F00E66113 /* CustomGroupViewController.swift */; };
+		2C171B702BD7477C00E66113 /* CustomGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C171B6F2BD7477C00E66113 /* CustomGroupViewController.storyboard */; };
 		2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41B7132BCFFB4E00EF5C38 /* ChatViewController.swift */; };
 		2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C41B7152BCFFB6500EF5C38 /* ChatViewController.storyboard */; };
 		2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C41B71A2BD0066A00EF5C38 /* UserTableViewCell.xib */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C171B6D2BD7475F00E66113 /* CustomGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupViewController.swift; sourceTree = "<group>"; };
+		2C171B6F2BD7477C00E66113 /* CustomGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomGroupViewController.storyboard; sourceTree = "<group>"; };
 		2C41B7132BCFFB4E00EF5C38 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2C41B7152BCFFB6500EF5C38 /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
 		2C41B7192BD0066A00EF5C38 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C171B6C2BD7473A00E66113 /* CustomGroup */ = {
+			isa = PBXGroup;
+			children = (
+				2C171B6D2BD7475F00E66113 /* CustomGroupViewController.swift */,
+				2C171B6F2BD7477C00E66113 /* CustomGroupViewController.storyboard */,
+			);
+			path = CustomGroup;
+			sourceTree = "<group>";
+		};
 		2C41B7122BCFFB2A00EF5C38 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				2C41B71D2BD0069F00EF5C38 /* Model */,
+				2C171B6C2BD7473A00E66113 /* CustomGroup */,
 				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
 				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
@@ -294,6 +308,7 @@
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
+				2C171B702BD7477C00E66113 /* CustomGroupViewController.storyboard in Resources */,
 				E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +333,7 @@
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
+				2C171B6E2BD7475F00E66113 /* CustomGroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
