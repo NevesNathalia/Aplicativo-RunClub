@@ -37,6 +37,11 @@
 		E658194E2BD6986E008D5742 /* infoOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658194B2BD6986D008D5742 /* infoOtherUserViewController.swift */; };
 		E65819522BD69893008D5742 /* homeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E658194F2BD69893008D5742 /* homeViewController.storyboard */; };
 		E65819532BD69893008D5742 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819502BD69893008D5742 /* homeViewController.swift */; };
+		E658195C2BD6B989008D5742 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658195A2BD6B989008D5742 /* HomeTableViewCell.swift */; };
+		E658195D2BD6B989008D5742 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E658195B2BD6B989008D5742 /* HomeTableViewCell.xib */; };
+		E65819612BD6BA21008D5742 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658195F2BD6BA21008D5742 /* HomeCollectionViewCell.swift */; };
+		E65819622BD6BA21008D5742 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65819602BD6BA21008D5742 /* HomeCollectionViewCell.xib */; };
+		E65819652BD6C01D008D5742 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819642BD6C01D008D5742 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		E658194B2BD6986D008D5742 /* infoOtherUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoOtherUserViewController.swift; sourceTree = "<group>"; };
 		E658194F2BD69893008D5742 /* homeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = homeViewController.storyboard; sourceTree = "<group>"; };
 		E65819502BD69893008D5742 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		E658195A2BD6B989008D5742 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E658195B2BD6B989008D5742 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		E658195F2BD6BA21008D5742 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E65819602BD6BA21008D5742 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		E65819642BD6C01D008D5742 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,11 +274,48 @@
 		E65819512BD69893008D5742 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				E658194F2BD69893008D5742 /* homeViewController.storyboard */,
-				E65819502BD69893008D5742 /* homeViewController.swift */,
+				E65819632BD6C004008D5742 /* HomeModel */,
+				E658195E2BD6B9D4008D5742 /* HomeScreen */,
+				E65819552BD6B8C0008D5742 /* CollectionViewCell */,
+				E65819542BD6B886008D5742 /* TableViewCell */,
 			);
 			name = home;
 			path = "../../../Documents/iOS/Screens/searchUser(RunClub)/searchUser(RunClub)/home";
+			sourceTree = "<group>";
+		};
+		E65819542BD6B886008D5742 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E658195A2BD6B989008D5742 /* HomeTableViewCell.swift */,
+				E658195B2BD6B989008D5742 /* HomeTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E65819552BD6B8C0008D5742 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E658195F2BD6BA21008D5742 /* HomeCollectionViewCell.swift */,
+				E65819602BD6BA21008D5742 /* HomeCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E658195E2BD6B9D4008D5742 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E65819502BD69893008D5742 /* homeViewController.swift */,
+				E658194F2BD69893008D5742 /* homeViewController.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E65819632BD6C004008D5742 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				E65819642BD6C01D008D5742 /* User.swift */,
+			);
+			path = HomeModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,8 +387,10 @@
 				E658194D2BD6986E008D5742 /* infoOtherUserViewController.storyboard in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
+				E65819622BD6BA21008D5742 /* HomeCollectionViewCell.xib in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
 				E65819522BD69893008D5742 /* homeViewController.storyboard in Resources */,
+				E658195D2BD6B989008D5742 /* HomeTableViewCell.xib in Resources */,
 				E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +407,7 @@
 				2C41B71C2BD0066A00EF5C38 /* UserTableViewCell.swift in Sources */,
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
 				E65819492BD69804008D5742 /* SearchUserViewController.swift in Sources */,
+				E65819612BD6BA21008D5742 /* HomeCollectionViewCell.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
@@ -368,7 +418,9 @@
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
+				E658195C2BD6B989008D5742 /* HomeTableViewCell.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
+				E65819652BD6C01D008D5742 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
