@@ -48,5 +48,9 @@ class CustomGroupViewController: UIViewController {
     }
     
     
-
+    @IBAction func tappedCreateGroupButton(_ sender: Any) {
+//        let communityGroup = UIStoryboard(name: String(describing: CommunityGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CommunityGroupViewController.self))
+//        
+//        navigationController?.pushViewController(communityGroup, animated: true)
+    }
 }
