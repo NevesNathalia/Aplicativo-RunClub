@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C12E7062BD80A1F002A87EB /* ViewPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12E7052BD80A1F002A87EB /* ViewPhotosViewController.swift */; };
+		2C12E7082BD80A32002A87EB /* ViewPhotosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C12E7072BD80A32002A87EB /* ViewPhotosViewController.storyboard */; };
 		2C171B6E2BD7475F00E66113 /* CustomGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C171B6D2BD7475F00E66113 /* CustomGroupViewController.swift */; };
 		2C171B702BD7477C00E66113 /* CustomGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C171B6F2BD7477C00E66113 /* CustomGroupViewController.storyboard */; };
 		2C171B732BD74E3C00E66113 /* CommunityGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C171B722BD74E3C00E66113 /* CommunityGroupViewController.swift */; };
@@ -33,13 +35,11 @@
 		2CBD4BE72BA9C7410052CD7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD4BE62BA9C7410052CD7A /* Base */; };
 		2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */; };
 		2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */; };
-		C40A42452BD7F51A00C4CFBE /* EditProfileUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A42432BD7F51A00C4CFBE /* EditProfileUserViewController.storyboard */; };
-		C40A42462BD7F51A00C4CFBE /* EditProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A42442BD7F51A00C4CFBE /* EditProfileUserViewController.swift */; };
-		E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65819402BD692FF008D5742 /* SignUpViewController.storyboard */; };
-		E65819432BD69308008D5742 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65819422BD69308008D5742 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C12E7052BD80A1F002A87EB /* ViewPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotosViewController.swift; sourceTree = "<group>"; };
+		2C12E7072BD80A32002A87EB /* ViewPhotosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewPhotosViewController.storyboard; sourceTree = "<group>"; };
 		2C171B6D2BD7475F00E66113 /* CustomGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupViewController.swift; sourceTree = "<group>"; };
 		2C171B6F2BD7477C00E66113 /* CustomGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomGroupViewController.storyboard; sourceTree = "<group>"; };
 		2C171B722BD74E3C00E66113 /* CommunityGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityGroupViewController.swift; sourceTree = "<group>"; };
@@ -68,10 +68,6 @@
 		2CBD4BE82BA9C7410052CD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGroupViewController.storyboard; sourceTree = "<group>"; };
-		C40A42432BD7F51A00C4CFBE /* EditProfileUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditProfileUserViewController.storyboard; sourceTree = "<group>"; };
-		C40A42442BD7F51A00C4CFBE /* EditProfileUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileUserViewController.swift; sourceTree = "<group>"; };
-		E65819402BD692FF008D5742 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUpViewController.storyboard; path = ../SignUpViewController.storyboard; sourceTree = "<group>"; };
-		E65819422BD69308008D5742 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C12E7042BD809FF002A87EB /* ViewPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				2C12E7052BD80A1F002A87EB /* ViewPhotosViewController.swift */,
+				2C12E7072BD80A32002A87EB /* ViewPhotosViewController.storyboard */,
+			);
+			path = ViewPhotos;
+			sourceTree = "<group>";
+		};
 		2C171B6C2BD7473A00E66113 /* CustomGroup */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +227,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
-				C40A42422BD7F4DF00C4CFBE /* EditProfileUser */,
+				2C12E7042BD809FF002A87EB /* ViewPhotos */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
 				2C171B712BD74E0700E66113 /* CommunityGroup */,
 				2C171B6C2BD7473A00E66113 /* CustomGroup */,
@@ -230,7 +235,6 @@
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
 				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
 				2C42D72C2BBA0619007C0289 /* ResetPassword */,
-				E658193F2BD692DD008D5742 /* SignUp */,
 				2CB3F4E12BAE0B28009E5E2A /* Login */,
 				2CB3F4E02BAE0A9E009E5E2A /* Welcome */,
 				2CB3F4DF2BAE09A2009E5E2A /* Resource */,
@@ -247,25 +251,6 @@
 				2CAD7C142BD1988C0006BCEE /* Cell */,
 			);
 			path = newGroup;
-			sourceTree = "<group>";
-		};
-		C40A42422BD7F4DF00C4CFBE /* EditProfileUser */ = {
-			isa = PBXGroup;
-			children = (
-				C40A42432BD7F51A00C4CFBE /* EditProfileUserViewController.storyboard */,
-				C40A42442BD7F51A00C4CFBE /* EditProfileUserViewController.swift */,
-			);
-			path = EditProfileUser;
-			sourceTree = "<group>";
-		};
-		E658193F2BD692DD008D5742 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				E65819422BD69308008D5742 /* SignUpViewController.swift */,
-				E65819402BD692FF008D5742 /* SignUpViewController.storyboard */,
-			);
-			name = SignUp;
-			path = ../../../.Trash/SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +311,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40A42452BD7F51A00C4CFBE /* EditProfileUserViewController.storyboard in Resources */,
 				2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */,
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
@@ -338,8 +322,8 @@
 				2C171B752BD74E5F00E66113 /* CommunityGroupViewController.storyboard in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* resetPasswordViewController.storyboard in Resources */,
+				2C12E7082BD80A32002A87EB /* ViewPhotosViewController.storyboard in Resources */,
 				2C171B702BD7477C00E66113 /* CustomGroupViewController.storyboard in Resources */,
-				E65819412BD692FF008D5742 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C12E7062BD80A1F002A87EB /* ViewPhotosViewController.swift in Sources */,
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
 				2C41B71C2BD0066A00EF5C38 /* UserTableViewCell.swift in Sources */,
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
@@ -358,10 +343,8 @@
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
-				E65819432BD69308008D5742 /* SignUpViewController.swift in Sources */,
 				2CAD7C1B2BD1995C0006BCEE /* Contacts.swift in Sources */,
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
-				C40A42462BD7F51A00C4CFBE /* EditProfileUserViewController.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,

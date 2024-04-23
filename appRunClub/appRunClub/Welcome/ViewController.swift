@@ -38,6 +38,13 @@ class ViewController: UIViewController {
         button.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
     }
 
+    
+    @IBAction func tappedRegisterButton(_ sender: Any) {
+//        let paraSignUp = UIStoryboard(name: String(describing: SignUpViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: SignUpViewController.self))
+//        
+//        navigationController?.pushViewController(paraSignUp, animated: true)
+    }
+    
     @IBAction func tappedLoginButton(_ sender: Any) {
         let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
     
