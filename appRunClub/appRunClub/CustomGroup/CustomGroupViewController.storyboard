@@ -1,28 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Custom Group View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomGroupViewController" id="Y6W-OH-hqX" customClass="CustomGroupViewController" customModule="appRunClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aww-dQ-dQf">
+                                <rect key="frame" x="30" y="20" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-xO-mzK">
+                                <rect key="frame" x="16" y="81" width="343" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Vhd-VT-Iue"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-zc-L5x">
+                                <rect key="frame" x="36" y="101" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="jzx-Hz-f9g"/>
+                                    <constraint firstAttribute="width" constant="32" id="wZj-Yv-ApL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWI-aU-3h7">
+                                <rect key="frame" x="77" y="253" width="221" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gci-e8-BvO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="T5X-xO-mzK" secondAttribute="trailing" constant="16" id="2TE-l7-tkW"/>
+                            <constraint firstItem="T5X-xO-mzK" firstAttribute="top" secondItem="Aww-dQ-dQf" secondAttribute="bottom" constant="40" id="FTj-Pf-fQu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TWI-aU-3h7" secondAttribute="trailing" constant="77" id="JgO-ro-zYZ"/>
+                            <constraint firstItem="T5X-xO-mzK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Mc8-dw-6Cu"/>
+                            <constraint firstItem="TWI-aU-3h7" firstAttribute="top" secondItem="T5X-xO-mzK" secondAttribute="bottom" constant="100" id="ZLR-dN-r72"/>
+                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="c3H-Ed-ckx"/>
+                            <constraint firstItem="TWI-aU-3h7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="77" id="gZ0-i0-FO2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Aww-dQ-dQf" secondAttribute="trailing" constant="30" id="u2L-uW-0JP"/>
+                            <constraint firstItem="yGB-zc-L5x" firstAttribute="centerY" secondItem="T5X-xO-mzK" secondAttribute="centerY" id="vOh-VY-2cO"/>
+                            <constraint firstItem="yGB-zc-L5x" firstAttribute="leading" secondItem="T5X-xO-mzK" secondAttribute="leading" constant="20" id="x4B-Y3-mJ4"/>
+                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yE3-Kx-LIz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="TWI-aU-3h7" id="cWP-Yj-dc5"/>
+                        <outlet property="nameGroupTextField" destination="T5X-xO-mzK" id="Smj-TK-Qnb"/>
+                        <outlet property="newGroupLabel" destination="Aww-dQ-dQf" id="84T-Ra-Ur9"/>
+                        <outlet property="photoButton" destination="yGB-zc-L5x" id="fJT-nD-jDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="3.1484257871064472"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
