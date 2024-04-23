@@ -9,6 +9,7 @@ import UIKit
 
 class NewGroupViewController: UIViewController {
 
+    @IBOutlet weak var addMembersLabel: UILabel!
     @IBOutlet weak var advanceButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -16,8 +17,16 @@ class NewGroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
+        configLabel(label: addMembersLabel)
         configTextField(textField: searchTextField)
         configButton()
+    }
+    
+    func configLabel(label: UILabel) {
+        label.text = "Adicionar Membros"
+        label.font = .systemFont(ofSize: 17, weight: .semibold)
+        label.textAlignment = .center
+        label.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
     }
     
     func configButton() {
@@ -37,6 +46,15 @@ class NewGroupViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(ContactsTableViewCell.nib(), forCellReuseIdentifier: ContactsTableViewCell.identifier)
     }
+    
+    
+    @IBAction func tappedAdvanceButton(_ sender: Any) {
+//        let customGroup = UIStoryboard(name: String(describing: CustomGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CustomGroupViewController.self))
+//
+//        navigationController?.pushViewController(customGroup, animated: true)
+        
+    }
+    
 }
 
 extension NewGroupViewController: UITableViewDelegate, UITableViewDataSource {

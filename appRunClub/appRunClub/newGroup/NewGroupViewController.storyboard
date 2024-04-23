@@ -16,39 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-P1-Xkb">
+                                <rect key="frame" x="0.0" y="149" width="393" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-10-mYV">
+                                <rect key="frame" x="298" y="59" width="75" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="k7C-EC-1y5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedAdvanceButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lvq-5D-l4I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-I8-iMQ">
+                                <rect key="frame" x="175.66666666666666" y="59" width="42" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-Ya-3CV">
-                                <rect key="frame" x="20" y="59" width="353" height="40"/>
+                                <rect key="frame" x="20" y="99" width="353" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4A7-fM-4fe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-P1-Xkb">
-                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-10-mYV">
-                                <rect key="frame" x="298" y="19" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="7B1-10-mYV" secondAttribute="bottom" constant="5" id="65L-oJ-zFA"/>
+                            <constraint firstItem="pJU-I8-iMQ" firstAttribute="centerY" secondItem="7B1-10-mYV" secondAttribute="centerY" id="DJt-5x-Sdp"/>
                             <constraint firstItem="gnE-P1-Xkb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EIs-W4-9ws"/>
+                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="7B1-10-mYV" secondAttribute="bottom" constant="20" id="Lme-Xs-uZu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7B1-10-mYV" secondAttribute="trailing" constant="20" id="OrZ-kT-Sug"/>
-                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TC5-uT-OJ3"/>
                             <constraint firstItem="YPz-Ya-3CV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TFU-TT-4ce"/>
+                            <constraint firstItem="pJU-I8-iMQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UPz-jU-t27"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gnE-P1-Xkb" secondAttribute="trailing" id="YGO-Sk-Jcg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YPz-Ya-3CV" secondAttribute="trailing" constant="20" id="bmG-ao-iiL"/>
-                            <constraint firstItem="gnE-P1-Xkb" firstAttribute="top" secondItem="YPz-Ya-3CV" secondAttribute="bottom" constant="10" id="l0b-vd-eSv"/>
+                            <constraint firstItem="pJU-I8-iMQ" firstAttribute="centerX" secondItem="YPz-Ya-3CV" secondAttribute="centerX" id="bzz-Id-zFW"/>
+                            <constraint firstItem="gnE-P1-Xkb" firstAttribute="top" secondItem="YPz-Ya-3CV" secondAttribute="bottom" constant="10" id="kQG-KG-YEN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gnE-P1-Xkb" secondAttribute="bottom" id="vHc-qh-3fN"/>
+                            <constraint firstItem="7B1-10-mYV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wPG-AI-p0r"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addMembersLabel" destination="pJU-I8-iMQ" id="ztw-5O-bQu"/>
                         <outlet property="advanceButton" destination="7B1-10-mYV" id="ffP-41-bTJ"/>
                         <outlet property="searchTextField" destination="YPz-Ya-3CV" id="rt2-x0-oFM"/>
                         <outlet property="tableView" destination="gnE-P1-Xkb" id="TgI-VY-Ikp"/>
@@ -56,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="-2"/>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
