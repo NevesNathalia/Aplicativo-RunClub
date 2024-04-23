@@ -218,8 +218,8 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
-				2C171B712BD74E0700E66113 /* CommunityGroup */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
+				2C171B712BD74E0700E66113 /* CommunityGroup */,
 				2C171B6C2BD7473A00E66113 /* CustomGroup */,
 				2CCF91A82BD143790059BC56 /* newGroup */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
