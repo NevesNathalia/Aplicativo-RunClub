@@ -8,7 +8,6 @@
 import UIKit
 
 class ProfileUserViewController: UIViewController {
-
     
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var editPhotoButton: UIButton!
@@ -71,6 +70,16 @@ class ProfileUserViewController: UIViewController {
     }
     
     @IBAction func tappedEditDataButton(_ sender: Any) {
+//        let editProfile = UIStoryboard(name: String(describing: EditProfileUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: EditProfileUserViewController.self))
+//        
+//        navigationController?.pushViewController(editProfile, animated: true)
     }
     
+    
+    @IBAction func tappedViewPhotoButton(_ sender: Any) {
+        let viewPhoto = UIStoryboard(name: String(describing: ViewPhotosViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ViewPhotosViewController.self))
+        
+        viewPhoto.modalPresentationStyle = .fullScreen
+        present(viewPhoto, animated: true)
+    }
 }

@@ -41,6 +41,9 @@
                                 <color key="tintColor" red="0.42745098469999998" green="0.70980393890000004" blue="0.54509806630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="ga1-Lp-JhH" eventType="touchUpInside" id="gRz-pe-uv7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUL-FQ-aSA">
                                 <rect key="frame" x="40" y="567" width="295" height="50"/>
