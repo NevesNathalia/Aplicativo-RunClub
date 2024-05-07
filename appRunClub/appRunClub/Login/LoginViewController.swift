@@ -29,6 +29,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var viewVerde: UIView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLabels()
@@ -92,7 +96,6 @@ class LoginViewController: UIViewController {
         view.layer.borderWidth = borderWidth
         view.layer.borderColor = borderColor
     }
-
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
         let resetPasword = UIStoryboard(name: String(describing: ResetPasswordViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ResetPasswordViewController.self)) as? ResetPasswordViewController

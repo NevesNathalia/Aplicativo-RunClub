@@ -23,6 +23,10 @@ class EditProfileUserViewController: UIViewController {
     @IBOutlet weak var userImage3: UIImageView!
     @IBOutlet weak var userImage4: UIImageView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLabel(label: aboutLabel, text: "Sobre mim", font: .systemFont(ofSize: 16, weight: .semibold), alignment: .left)

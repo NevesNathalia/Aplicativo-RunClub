@@ -9,24 +9,35 @@ import UIKit
 
 class CustomGroupViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var newGroupLabel: UILabel!
     @IBOutlet weak var nameGroupTextField: UITextField!
     @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var createButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configNavigationBar(button: backButton)
         configLabel(label: newGroupLabel)
         configTextField(textField: nameGroupTextField)
         configPhotoButton(button: photoButton)
         configButton(button: createButton)
     }
     
+    func configNavigationBar(button: UIButton) {
+        button.setTitle("Voltar", for: .normal)
+        button.tintColor = .black
+    }
+    
     func configLabel(label: UILabel) {
         label.text = "Novo Grupo"
         label.font = .systemFont(ofSize: 17, weight: .semibold)
         label.textAlignment = .center
-        label.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+        label.textColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
     }
     
     func configTextField(textField: UITextField) {
@@ -47,6 +58,9 @@ class CustomGroupViewController: UIViewController {
         button.tintColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 1.0)
     }
     
+    @IBAction func tappedBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func tappedCreateGroupButton(_ sender: Any) {
         let communityGroup = UIStoryboard(name: String(describing: CommunityGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CommunityGroupViewController.self)) as? CommunityGroupViewController

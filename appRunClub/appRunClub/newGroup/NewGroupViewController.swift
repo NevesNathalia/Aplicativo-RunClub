@@ -9,29 +9,35 @@ import UIKit
 
 class NewGroupViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var addMembersLabel: UILabel!
     @IBOutlet weak var advanceButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
         configLabel(label: addMembersLabel)
         configTextField(textField: searchTextField)
-        configButton()
+        configNavigationBar(button: backButton, text: "Voltar", color: .black)
+        configNavigationBar(button: advanceButton, text: "Avançar", color: .black)
     }
     
     func configLabel(label: UILabel) {
         label.text = "Adicionar Membros"
         label.font = .systemFont(ofSize: 17, weight: .semibold)
         label.textAlignment = .center
-        label.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+        label.textColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
     }
     
-    func configButton() {
-        advanceButton.setTitle("Avançar", for: .normal)
-        advanceButton.tintColor = .black
+    func configNavigationBar(button: UIButton, text: String, color: UIColor) {
+        button.setTitle(text, for: .normal)
+        button.tintColor = color
     }
     
     func configTextField(textField: UITextField) {
@@ -47,6 +53,9 @@ class NewGroupViewController: UIViewController {
         tableView.register(ContactsTableViewCell.nib(), forCellReuseIdentifier: ContactsTableViewCell.identifier)
     }
     
+    @IBAction func tappedBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func tappedAdvanceButton(_ sender: Any) {
         let customGroup = UIStoryboard(name: String(describing: CustomGroupViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: CustomGroupViewController.self)) as? CustomGroupViewController
@@ -54,7 +63,6 @@ class NewGroupViewController: UIViewController {
         navigationController?.pushViewController(customGroup ?? UIViewController(), animated: true)
         
     }
-    
 }
 
 extension NewGroupViewController: UITableViewDelegate, UITableViewDataSource {

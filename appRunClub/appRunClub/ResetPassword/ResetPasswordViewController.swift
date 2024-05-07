@@ -9,12 +9,17 @@ import UIKit
 
 class ResetPasswordViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var resetLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var invalidEmailLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +30,8 @@ class ResetPasswordViewController: UIViewController {
         configLabels(label: emailLabel, text: "Email", font: .systemFont(ofSize: 14), aligment: .left)
         configTextField()
         invalidEmailLabel.text = ""
-        configButton()
+        configButton(button: confirmButton, text: "Confirmar", color: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), number: 20.0, bool: true)
+        configButton(button: backButton, text: "Voltar", color: .black, number: 0.0, bool: false)
     }
 
     func configLabels(label: UILabel, text: String, font: UIFont, aligment: NSTextAlignment) {
@@ -42,11 +48,15 @@ class ResetPasswordViewController: UIViewController {
         emailTextField.layer.borderColor = UIColor(red: 27/255, green: 67/255, blue: 50/255, alpha: 1.0).cgColor
     }
     
-    func configButton() {
-        confirmButton.setTitle("Confirmar", for: .normal)
-        confirmButton.layer.cornerRadius = 20.0
-        confirmButton.clipsToBounds = true
-        confirmButton.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
+    func configButton(button: UIButton, text: String, color: UIColor, number: Double, bool: Bool) {
+        button.setTitle(text, for: .normal)
+        button.layer.cornerRadius = number
+        button.clipsToBounds = bool
+        button.tintColor = color
+    }
+    
+    @IBAction func tappedBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func tappedShowLogin(_ sender: Any) {

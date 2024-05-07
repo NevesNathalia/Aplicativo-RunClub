@@ -23,6 +23,10 @@ class ProfileUserViewController: UIViewController {
     @IBOutlet weak var moreTextField: UITextField!
     @IBOutlet weak var viewPhotoButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLabel(label: nameUserLabel, text: "Nome do Usuário", font: .systemFont(ofSize: 20, weight: .medium), alignment: .center)
@@ -70,9 +74,9 @@ class ProfileUserViewController: UIViewController {
     }
     
     @IBAction func tappedEditDataButton(_ sender: Any) {
-//        let editProfile = UIStoryboard(name: String(describing: EditProfileUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: EditProfileUserViewController.self))
-//        
-//        navigationController?.pushViewController(editProfile, animated: true)
+        let editProfile = UIStoryboard(name: String(describing: EditProfileUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: EditProfileUserViewController.self))
+        
+        navigationController?.pushViewController(editProfile, animated: true)
     }
     
     

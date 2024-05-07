@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aww-dQ-dQf">
-                                <rect key="frame" x="30" y="20" width="315" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-xO-mzK">
                                 <rect key="frame" x="16" y="81" width="343" height="72"/>
                                 <constraints>
@@ -50,24 +44,40 @@
                                     <action selector="tappedCreateGroupButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="suI-SC-ZpG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieT-T2-cgP">
+                                <rect key="frame" x="0.0" y="20" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="k7Y-sz-Odx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aww-dQ-dQf">
+                                <rect key="frame" x="167" y="26" width="41.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="T5X-xO-mzK" secondAttribute="trailing" constant="16" id="2TE-l7-tkW"/>
-                            <constraint firstItem="T5X-xO-mzK" firstAttribute="top" secondItem="Aww-dQ-dQf" secondAttribute="bottom" constant="40" id="FTj-Pf-fQu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TWI-aU-3h7" secondAttribute="trailing" constant="77" id="JgO-ro-zYZ"/>
                             <constraint firstItem="T5X-xO-mzK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Mc8-dw-6Cu"/>
+                            <constraint firstItem="ieT-T2-cgP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UNb-Ow-Ysy"/>
+                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="6" id="YUk-Fy-pJW"/>
                             <constraint firstItem="TWI-aU-3h7" firstAttribute="top" secondItem="T5X-xO-mzK" secondAttribute="bottom" constant="100" id="ZLR-dN-r72"/>
-                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="c3H-Ed-ckx"/>
+                            <constraint firstItem="T5X-xO-mzK" firstAttribute="top" secondItem="ieT-T2-cgP" secondAttribute="bottom" constant="26" id="bBO-UB-28c"/>
+                            <constraint firstItem="ieT-T2-cgP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cVJ-nb-2ro"/>
                             <constraint firstItem="TWI-aU-3h7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="77" id="gZ0-i0-FO2"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Aww-dQ-dQf" secondAttribute="trailing" constant="30" id="u2L-uW-0JP"/>
+                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="centerX" secondItem="T5X-xO-mzK" secondAttribute="centerX" id="rTP-NX-mp7"/>
                             <constraint firstItem="yGB-zc-L5x" firstAttribute="centerY" secondItem="T5X-xO-mzK" secondAttribute="centerY" id="vOh-VY-2cO"/>
                             <constraint firstItem="yGB-zc-L5x" firstAttribute="leading" secondItem="T5X-xO-mzK" secondAttribute="leading" constant="20" id="x4B-Y3-mJ4"/>
-                            <constraint firstItem="Aww-dQ-dQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yE3-Kx-LIz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ieT-T2-cgP" id="TRB-19-mvj"/>
                         <outlet property="createButton" destination="TWI-aU-3h7" id="cWP-Yj-dc5"/>
                         <outlet property="nameGroupTextField" destination="T5X-xO-mzK" id="Smj-TK-Qnb"/>
                         <outlet property="newGroupLabel" destination="Aww-dQ-dQf" id="84T-Ra-Ur9"/>
