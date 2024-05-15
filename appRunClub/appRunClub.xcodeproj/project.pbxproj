@@ -67,6 +67,8 @@
 		C4B8456A2BF1C8C700CD954A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4B845692BF1C8C700CD954A /* FirebaseRemoteConfigSwift */; };
 		C4B8456C2BF1C8C700CD954A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C4B8456B2BF1C8C700CD954A /* FirebaseStorage */; };
 		C4B8456E2BF1C8C700CD954A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C4B8456D2BF1C8C700CD954A /* FirebaseStorageCombine-Community */; };
+		E620FA112BF539FB006177A3 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */; };
+		E620FA132BF53A22006177A3 /* SignUpUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,8 @@
 		2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGroupViewController.storyboard; sourceTree = "<group>"; };
 		C4B845362BF1C86300CD954A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +313,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				E620FA0F2BF5351D006177A3 /* SignUpUser */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
 				2C12E7142BD839D6002A87EB /* TabBar */,
 				2C12E7042BD809FF002A87EB /* ViewPhotos */,
@@ -336,6 +341,15 @@
 				2CAD7C142BD1988C0006BCEE /* Cell */,
 			);
 			path = newGroup;
+			sourceTree = "<group>";
+		};
+		E620FA0F2BF5351D006177A3 /* SignUpUser */ = {
+			isa = PBXGroup;
+			children = (
+				E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */,
+				E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */,
+			);
+			path = SignUpUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +450,7 @@
 				2C5BB7182BEA6490004C5566 /* EditProfileUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */,
+				E620FA112BF539FB006177A3 /* SignUpViewController.storyboard in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				C4B845372BF1C86400CD954A /* GoogleService-Info.plist in Resources */,
@@ -457,6 +472,7 @@
 				2C12E7172BD83A0C002A87EB /* TabBarController.swift in Sources */,
 				2C12E7062BD80A1F002A87EB /* ViewPhotosViewController.swift in Sources */,
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
+				E620FA132BF53A22006177A3 /* SignUpUserViewController.swift in Sources */,
 				2C41B71C2BD0066A00EF5C38 /* UserTableViewCell.swift in Sources */,
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
 				2C171B732BD74E3C00E66113 /* CommunityGroupViewController.swift in Sources */,
