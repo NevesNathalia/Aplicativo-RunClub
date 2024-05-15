@@ -92,6 +92,12 @@
                                     <constraint firstAttribute="height" constant="100" id="viR-Ld-7Hq"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YN-Y9-wlm">
+                                <rect key="frame" x="20" y="437.33333333333331" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,7 +113,9 @@
                             <constraint firstAttribute="trailing" secondItem="cEO-UQ-2oY" secondAttribute="trailing" constant="0.5" id="Ox9-zj-Wf2"/>
                             <constraint firstItem="aoS-pf-CRA" firstAttribute="top" secondItem="b2t-Ob-McG" secondAttribute="bottom" constant="22" id="OxX-dz-bqt"/>
                             <constraint firstItem="cEO-UQ-2oY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="0.5" id="RFT-Lb-6CJ"/>
+                            <constraint firstItem="0YN-Y9-wlm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="SW4-XO-ixf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J2O-Sq-pvp" secondAttribute="trailing" constant="20" id="TJa-Db-TlS"/>
+                            <constraint firstItem="0YN-Y9-wlm" firstAttribute="top" secondItem="4Ws-Yt-WGp" secondAttribute="bottom" constant="10" id="WkJ-my-j1k"/>
                             <constraint firstItem="LBo-QZ-um9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="YZD-C5-XJb"/>
                             <constraint firstItem="4Ws-Yt-WGp" firstAttribute="top" secondItem="aoS-pf-CRA" secondAttribute="bottom" constant="7" id="apD-OI-swO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b2t-Ob-McG" secondAttribute="trailing" constant="20" id="apF-Gn-QDL"/>
@@ -127,6 +135,7 @@
                         <outlet property="dontHaveAnAccountLabel" destination="4Yp-xZ-iDf" id="H2U-9K-hrf"/>
                         <outlet property="emailLabel" destination="LBo-QZ-um9" id="Y3Z-Va-nUh"/>
                         <outlet property="emailTextField" destination="b2t-Ob-McG" id="acN-Za-hJM"/>
+                        <outlet property="invalidLabel" destination="0YN-Y9-wlm" id="9kj-tA-1uT"/>
                         <outlet property="logInLabel" destination="XPs-6d-Psh" id="Bfs-9w-tfK"/>
                         <outlet property="passwordForgotButton" destination="Wko-Fd-KeW" id="e3a-Ex-GgO"/>
                         <outlet property="passwordLabel" destination="aoS-pf-CRA" id="1aC-Ja-CvE"/>

@@ -6,27 +6,22 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var logInLabel: UILabel!
-    
     @IBOutlet weak var emailLabel: UILabel!
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordLabel: UILabel!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var passwordForgotButton: UIButton!
-    
     @IBOutlet weak var submitButton: UIButton!
-    
     @IBOutlet weak var dontHaveAnAccountLabel: UILabel!
-    
+    @IBOutlet weak var invalidLabel: UILabel!
     @IBOutlet weak var toSignUpButton: UIButton!
-    
     @IBOutlet weak var viewVerde: UIView!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +92,29 @@ class LoginViewController: UIViewController {
         view.layer.borderColor = borderColor
     }
     
+    func signIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                  if error == nil {
+                      print("Sucesso login")
+                  } else {
+                      self.invalidLabel.text = "Email ou senha inválido"
+                      self.invalidLabel.textColor = .red
+                      self.emailTextField.layer.borderWidth = 1.0
+                      self.emailTextField.layer.borderColor = UIColor.red.cgColor
+                      self.passwordTextField.layer.borderWidth = 1.0
+                      self.passwordTextField.layer.borderColor = UIColor.red.cgColor
+                      
+                      print("Error login, error: \(error?.localizedDescription ?? "")")
+                  }
+              }
+          }
+    
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
+        
+        
+        
+        
+        
         let resetPasword = UIStoryboard(name: String(describing: ResetPasswordViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ResetPasswordViewController.self)) as? ResetPasswordViewController
         
         navigationController?.pushViewController(resetPasword ?? UIViewController(), animated: true)
