@@ -31,18 +31,16 @@ class ViewController: UIViewController {
         label.textAlignment = aligment
     }
     
-    
     func configButtons(button: UIButton) {
         button.layer.cornerRadius = 20.0
         button.clipsToBounds = true
         button.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
     }
 
-    
     @IBAction func tappedRegisterButton(_ sender: Any) {
-//        let paraSignUp = UIStoryboard(name: String(describing: SignUpViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: SignUpViewController.self))
-//        
-//        navigationController?.pushViewController(paraSignUp, animated: true)
+        let signUp = UIStoryboard(name: String(describing: SignUpUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: SignUpUserViewController.self)) as? SignUpUserViewController
+        
+        navigationController?.pushViewController(signUp ?? UIViewController(), animated: true)
     }
     
     @IBAction func tappedLoginButton(_ sender: Any) {
