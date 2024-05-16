@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
         configButtons()
         configTextFields()
         configView(viewVerde, backgroundColor: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), cornerRadius: 60.0, borderWidth: 0.5, borderColor: CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0))
+        invalidLabel.text = ""
     }
     
     
