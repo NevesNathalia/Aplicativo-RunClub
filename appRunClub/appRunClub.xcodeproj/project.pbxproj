@@ -67,10 +67,10 @@
 		C4B8456A2BF1C8C700CD954A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4B845692BF1C8C700CD954A /* FirebaseRemoteConfigSwift */; };
 		C4B8456C2BF1C8C700CD954A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C4B8456B2BF1C8C700CD954A /* FirebaseStorage */; };
 		C4B8456E2BF1C8C700CD954A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C4B8456D2BF1C8C700CD954A /* FirebaseStorageCombine-Community */; };
-		E620FA112BF539FB006177A3 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */; };
 		E620FA132BF53A22006177A3 /* SignUpUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */; };
 		E659A21A2BF64871006A94CE /* InfoOtherUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */; };
 		E659A21C2BF648AE006A94CE /* InfoOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */; };
+		E659A21E2BF665A3006A94CE /* SignUpUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A21D2BF665A3006A94CE /* SignUpUserViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,10 +109,10 @@
 		2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewGroupViewController.storyboard; sourceTree = "<group>"; };
 		C4B845362BF1C86300CD954A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserViewController.swift; sourceTree = "<group>"; };
 		E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoOtherUserViewController.storyboard; sourceTree = "<group>"; };
 		E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOtherUserViewController.swift; sourceTree = "<group>"; };
+		E659A21D2BF665A3006A94CE /* SignUpUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpUserViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,7 +351,7 @@
 		E620FA0F2BF5351D006177A3 /* SignUpUser */ = {
 			isa = PBXGroup;
 			children = (
-				E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */,
+				E659A21D2BF665A3006A94CE /* SignUpUserViewController.storyboard */,
 				E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */,
 			);
 			path = SignUpUser;
@@ -465,11 +465,11 @@
 				2C5BB7182BEA6490004C5566 /* EditProfileUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */,
-				E620FA112BF539FB006177A3 /* SignUpViewController.storyboard in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
 				2C41B71B2BD0066A00EF5C38 /* UserTableViewCell.xib in Resources */,
 				C4B845372BF1C86400CD954A /* GoogleService-Info.plist in Resources */,
 				2C171B752BD74E5F00E66113 /* CommunityGroupViewController.storyboard in Resources */,
+				E659A21E2BF665A3006A94CE /* SignUpUserViewController.storyboard in Resources */,
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* ResetPasswordViewController.storyboard in Resources */,
 				2C12E7082BD80A32002A87EB /* ViewPhotosViewController.storyboard in Resources */,
