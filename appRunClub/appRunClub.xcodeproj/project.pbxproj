@@ -69,6 +69,8 @@
 		C4B8456E2BF1C8C700CD954A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C4B8456D2BF1C8C700CD954A /* FirebaseStorageCombine-Community */; };
 		E620FA112BF539FB006177A3 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */; };
 		E620FA132BF53A22006177A3 /* SignUpUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */; };
+		E659A21A2BF64871006A94CE /* InfoOtherUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */; };
+		E659A21C2BF648AE006A94CE /* InfoOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +111,8 @@
 		C4B845362BF1C86300CD954A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E620FA102BF539FB006177A3 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserViewController.swift; sourceTree = "<group>"; };
+		E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoOtherUserViewController.storyboard; sourceTree = "<group>"; };
+		E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOtherUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +317,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				E659A2182BF6444B006A94CE /* InfoOtherUser */,
 				E620FA0F2BF5351D006177A3 /* SignUpUser */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
 				2C12E7142BD839D6002A87EB /* TabBar */,
@@ -350,6 +355,15 @@
 				E620FA122BF53A22006177A3 /* SignUpUserViewController.swift */,
 			);
 			path = SignUpUser;
+			sourceTree = "<group>";
+		};
+		E659A2182BF6444B006A94CE /* InfoOtherUser */ = {
+			isa = PBXGroup;
+			children = (
+				E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */,
+				E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */,
+			);
+			path = InfoOtherUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +459,7 @@
 				2C12E7192BD83A20002A87EB /* TabBarController.storyboard in Resources */,
 				2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */,
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
+				E659A21A2BF64871006A94CE /* InfoOtherUserViewController.storyboard in Resources */,
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2C5BB7182BEA6490004C5566 /* EditProfileUserViewController.storyboard in Resources */,
@@ -472,6 +487,7 @@
 				2C12E7172BD83A0C002A87EB /* TabBarController.swift in Sources */,
 				2C12E7062BD80A1F002A87EB /* ViewPhotosViewController.swift in Sources */,
 				2CB3F4E52BAE0B55009E5E2A /* LoginViewController.swift in Sources */,
+				E659A21C2BF648AE006A94CE /* InfoOtherUserViewController.swift in Sources */,
 				E620FA132BF53A22006177A3 /* SignUpUserViewController.swift in Sources */,
 				2C41B71C2BD0066A00EF5C38 /* UserTableViewCell.swift in Sources */,
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
