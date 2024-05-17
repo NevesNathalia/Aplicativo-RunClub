@@ -12,4 +12,6 @@ struct User {
     var image: UIImage
     var name: String
     var mensage: String
+    var location: String
+    var description: String
 }

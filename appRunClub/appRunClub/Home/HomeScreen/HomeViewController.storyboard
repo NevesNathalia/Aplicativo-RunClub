@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="appRunClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-XW-udK">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04x-Mn-4vM">
+                                <rect key="frame" x="148" y="20" width="79" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9w7-QL-nY0">
+                                <rect key="frame" x="15" y="20" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="KKh-Z9-gHt"/>
+                                    <constraint firstAttribute="width" constant="55" id="nDc-j6-95E"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Za-6S-zcA">
+                                <rect key="frame" x="305" y="19" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="h4d-4b-qnn"/>
+                                    <constraint firstAttribute="height" constant="37" id="oUg-Zj-ttG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Za-6S-zcA" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="19" id="2xU-Sq-rvX"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="831-2g-MbO"/>
+                            <constraint firstItem="9w7-QL-nY0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aq9-wj-9ZO"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="b6H-QO-3nj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Za-6S-zcA" secondAttribute="trailing" constant="15" id="dOD-ma-QQ7"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="45" id="hJS-dC-Q6G"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vor-KV-IP3"/>
+                            <constraint firstItem="9w7-QL-nY0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="zO8-0O-bDM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburgerIcon" destination="9w7-QL-nY0" id="8VA-US-iZx"/>
+                        <outlet property="magnifyingGlass" destination="1Za-6S-zcA" id="E4f-qN-wyb"/>
+                        <outlet property="runClubLogo" destination="04x-Mn-4vM" id="syl-VJ-1fo"/>
+                        <outlet property="tableViewHome" destination="nTC-XW-udK" id="Pve-9H-VET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-2.2488755622188905"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

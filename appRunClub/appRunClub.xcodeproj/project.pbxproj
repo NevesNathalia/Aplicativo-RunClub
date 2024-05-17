@@ -71,6 +71,12 @@
 		E659A21A2BF64871006A94CE /* InfoOtherUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */; };
 		E659A21C2BF648AE006A94CE /* InfoOtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */; };
 		E659A21E2BF665A3006A94CE /* SignUpUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A21D2BF665A3006A94CE /* SignUpUserViewController.storyboard */; };
+		E659A2212BF6681E006A94CE /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A2202BF6681E006A94CE /* HomeViewController.storyboard */; };
+		E659A2232BF6682D006A94CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A2222BF6682D006A94CE /* HomeViewController.swift */; };
+		E659A2292BF671C5006A94CE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A2272BF671C5006A94CE /* HomeTableViewCell.swift */; };
+		E659A22A2BF671C5006A94CE /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659A2282BF671C5006A94CE /* HomeTableViewCell.xib */; };
+		E659A2312BF74DB9006A94CE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */; };
+		E659A2322BF74DB9006A94CE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +119,12 @@
 		E659A2192BF64871006A94CE /* InfoOtherUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoOtherUserViewController.storyboard; sourceTree = "<group>"; };
 		E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOtherUserViewController.swift; sourceTree = "<group>"; };
 		E659A21D2BF665A3006A94CE /* SignUpUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpUserViewController.storyboard; sourceTree = "<group>"; };
+		E659A2202BF6681E006A94CE /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		E659A2222BF6682D006A94CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E659A2272BF671C5006A94CE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E659A2282BF671C5006A94CE /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +329,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				E659A21F2BF667DB006A94CE /* Home */,
 				E659A2182BF6444B006A94CE /* InfoOtherUser */,
 				E620FA0F2BF5351D006177A3 /* SignUpUser */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
@@ -364,6 +377,43 @@
 				E659A21B2BF648AE006A94CE /* InfoOtherUserViewController.swift */,
 			);
 			path = InfoOtherUser;
+			sourceTree = "<group>";
+		};
+		E659A21F2BF667DB006A94CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E659A2242BF67164006A94CE /* HomeScreen */,
+				E659A2252BF67179006A94CE /* HomeTableView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E659A2242BF67164006A94CE /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E659A2222BF6682D006A94CE /* HomeViewController.swift */,
+				E659A2202BF6681E006A94CE /* HomeViewController.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E659A2252BF67179006A94CE /* HomeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E659A2282BF671C5006A94CE /* HomeTableViewCell.xib */,
+				E659A2272BF671C5006A94CE /* HomeTableViewCell.swift */,
+				E659A2262BF6718B006A94CE /* HomeCollectionView */,
+			);
+			path = HomeTableView;
+			sourceTree = "<group>";
+		};
+		E659A2262BF6718B006A94CE /* HomeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */,
+				E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +510,7 @@
 				2CBD4BE42BA9C7410052CD7A /* Assets.xcassets in Resources */,
 				2CB3F4E32BAE0B3E009E5E2A /* LoginViewController.storyboard in Resources */,
 				E659A21A2BF64871006A94CE /* InfoOtherUserViewController.storyboard in Resources */,
+				E659A2322BF74DB9006A94CE /* HomeCollectionViewCell.xib in Resources */,
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2C5BB7182BEA6490004C5566 /* EditProfileUserViewController.storyboard in Resources */,
@@ -473,6 +524,8 @@
 				2CCF91AC2BD143B50059BC56 /* NewGroupViewController.storyboard in Resources */,
 				2C42D72E2BBA0642007C0289 /* ResetPasswordViewController.storyboard in Resources */,
 				2C12E7082BD80A32002A87EB /* ViewPhotosViewController.storyboard in Resources */,
+				E659A2212BF6681E006A94CE /* HomeViewController.storyboard in Resources */,
+				E659A22A2BF671C5006A94CE /* HomeTableViewCell.xib in Resources */,
 				2C171B702BD7477C00E66113 /* CustomGroupViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,12 +546,15 @@
 				2C41B7142BCFFB4E00EF5C38 /* ChatViewController.swift in Sources */,
 				2C171B732BD74E3C00E66113 /* CommunityGroupViewController.swift in Sources */,
 				2CBD4BDF2BA9C73F0052CD7A /* ViewController.swift in Sources */,
+				E659A2292BF671C5006A94CE /* HomeTableViewCell.swift in Sources */,
 				2C42D7302BBA0661007C0289 /* ResetPasswordViewController.swift in Sources */,
 				2CCF91AA2BD1439F0059BC56 /* NewGroupViewController.swift in Sources */,
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
 				2CAD7C1B2BD1995C0006BCEE /* Contacts.swift in Sources */,
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
+				E659A2232BF6682D006A94CE /* HomeViewController.swift in Sources */,
+				E659A2312BF74DB9006A94CE /* HomeCollectionViewCell.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,
 				2C5BB7192BEA6490004C5566 /* EditProfileUserViewController.swift in Sources */,
