@@ -77,6 +77,8 @@
 		E659A22A2BF671C5006A94CE /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659A2282BF671C5006A94CE /* HomeTableViewCell.xib */; };
 		E659A2312BF74DB9006A94CE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */; };
 		E659A2322BF74DB9006A94CE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */; };
+		E659A2352BF75482006A94CE /* SearchUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659A2342BF75482006A94CE /* SearchUserViewController.storyboard */; };
+		E659A2372BF7549E006A94CE /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659A2362BF7549E006A94CE /* SearchUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +127,8 @@
 		E659A2282BF671C5006A94CE /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		E659A2342BF75482006A94CE /* SearchUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchUserViewController.storyboard; sourceTree = "<group>"; };
+		E659A2362BF7549E006A94CE /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +333,7 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
+				E659A2332BF7545F006A94CE /* SearchUser */,
 				E659A21F2BF667DB006A94CE /* Home */,
 				E659A2182BF6444B006A94CE /* InfoOtherUser */,
 				E620FA0F2BF5351D006177A3 /* SignUpUser */,
@@ -414,6 +419,15 @@
 				E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */,
 			);
 			path = HomeCollectionView;
+			sourceTree = "<group>";
+		};
+		E659A2332BF7545F006A94CE /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				E659A2342BF75482006A94CE /* SearchUserViewController.storyboard */,
+				E659A2362BF7549E006A94CE /* SearchUserViewController.swift */,
+			);
+			path = SearchUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +528,7 @@
 				2C41B7162BCFFB6500EF5C38 /* ChatViewController.storyboard in Resources */,
 				2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */,
 				2C5BB7182BEA6490004C5566 /* EditProfileUserViewController.storyboard in Resources */,
+				E659A2352BF75482006A94CE /* SearchUserViewController.storyboard in Resources */,
 				2CBD4BE72BA9C7410052CD7A /* Base in Resources */,
 				2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */,
 				2CBD4BE22BA9C73F0052CD7A /* Base in Resources */,
@@ -554,6 +569,7 @@
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				E659A2232BF6682D006A94CE /* HomeViewController.swift in Sources */,
+				E659A2372BF7549E006A94CE /* SearchUserViewController.swift in Sources */,
 				E659A2312BF74DB9006A94CE /* HomeCollectionViewCell.swift in Sources */,
 				2C41B71F2BD006B400EF5C38 /* User.swift in Sources */,
 				2CBD4BDD2BA9C73F0052CD7A /* SceneDelegate.swift in Sources */,

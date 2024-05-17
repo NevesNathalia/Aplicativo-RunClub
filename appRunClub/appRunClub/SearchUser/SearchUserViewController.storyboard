@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search User View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SearchUserViewController" id="Y6W-OH-hqX" customClass="SearchUserViewController" customModule="appRunClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-8o-hAA">
+                                <rect key="frame" x="166.5" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-U2-RbF">
+                                <rect key="frame" x="20" y="51" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DPH-sU-rrD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-iz-GQs">
+                                <rect key="frame" x="150" y="316" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kJR-SN-Qha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FOV-U2-RbF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9UT-NN-n8T"/>
+                            <constraint firstItem="vaF-iz-GQs" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="XKc-1n-rLP"/>
+                            <constraint firstItem="Xes-8o-hAA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hge-j9-lVV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FOV-U2-RbF" secondAttribute="trailing" constant="20" id="oFJ-u9-lk2"/>
+                            <constraint firstItem="FOV-U2-RbF" firstAttribute="top" secondItem="Xes-8o-hAA" secondAttribute="bottom" constant="10" id="oUf-Lw-icm"/>
+                            <constraint firstItem="Xes-8o-hAA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="or1-gX-FXS"/>
+                            <constraint firstItem="vaF-iz-GQs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xTu-nB-dve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchUserButton" destination="vaF-iz-GQs" id="eNv-jL-v9J"/>
+                        <outlet property="searchUserLabel" destination="Xes-8o-hAA" id="nWC-eK-h0V"/>
+                        <outlet property="searchUserTextField" destination="FOV-U2-RbF" id="I5m-yB-qnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
