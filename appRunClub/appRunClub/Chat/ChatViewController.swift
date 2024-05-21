@@ -58,7 +58,7 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier, for: indexPath) as? UserTableViewCell
-        //cell?.setupCell(data: User(image: UIImage(named: "profile") ?? UIImage(), name: "Contato", mensage: "Mensagem"))
+        cell?.setupCell(data: User(image: UIImage(named: "profile") ?? UIImage(), name: "Contato", mensage: "Mensagem", location: "", description: ""))
         return cell ?? UITableViewCell()
     }
     

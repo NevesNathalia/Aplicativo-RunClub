@@ -329,20 +329,20 @@
 		2CBD4BD92BA9C73F0052CD7A /* appRunClub */ = {
 			isa = PBXGroup;
 			children = (
-				E659A21F2BF667DB006A94CE /* Home */,
-				E659A2182BF6444B006A94CE /* InfoOtherUser */,
-				E620FA0F2BF5351D006177A3 /* SignUpUser */,
 				2C41B71D2BD0069F00EF5C38 /* Model */,
-				2C12E7142BD839D6002A87EB /* TabBar */,
+				2C5BB7172BEA648F004C5566 /* EditProfileUser */,
 				2C12E7042BD809FF002A87EB /* ViewPhotos */,
+				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
 				2C171B712BD74E0700E66113 /* CommunityGroup */,
 				2C171B6C2BD7473A00E66113 /* CustomGroup */,
-				2CCF91A82BD143790059BC56 /* newGroup */,
+				2CCF91A82BD143790059BC56 /* NewGroup */,
 				2C41B7122BCFFB2A00EF5C38 /* Chat */,
-				2C5BB7172BEA648F004C5566 /* EditProfileUser */,
-				2C64EBF32BCC0E6B00CBA85F /* ProfileUser */,
+				E659A2182BF6444B006A94CE /* InfoOtherUser */,
+				E659A21F2BF667DB006A94CE /* Home */,
+				2C12E7142BD839D6002A87EB /* TabBar */,
 				2C42D72C2BBA0619007C0289 /* ResetPassword */,
 				2CB3F4E12BAE0B28009E5E2A /* Login */,
+				E620FA0F2BF5351D006177A3 /* SignUpUser */,
 				2CB3F4E02BAE0A9E009E5E2A /* Welcome */,
 				2CB3F4DF2BAE09A2009E5E2A /* Resource */,
 				2CBD4BE82BA9C7410052CD7A /* Info.plist */,
@@ -351,14 +351,14 @@
 			path = appRunClub;
 			sourceTree = "<group>";
 		};
-		2CCF91A82BD143790059BC56 /* newGroup */ = {
+		2CCF91A82BD143790059BC56 /* NewGroup */ = {
 			isa = PBXGroup;
 			children = (
 				2CCF91A92BD1439F0059BC56 /* NewGroupViewController.swift */,
 				2CCF91AB2BD143B50059BC56 /* NewGroupViewController.storyboard */,
 				2CAD7C142BD1988C0006BCEE /* Cell */,
 			);
-			path = newGroup;
+			path = NewGroup;
 			sourceTree = "<group>";
 		};
 		E620FA0F2BF5351D006177A3 /* SignUpUser */ = {

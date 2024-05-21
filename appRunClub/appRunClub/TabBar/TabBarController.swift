@@ -17,13 +17,13 @@ class TabBarController: UITabBarController {
     
     func addControllers() {
         
-//        let firstViewController : UINavigationController = {
-//            let viewController = UIStoryboard(name: String(describing: HomeViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
-//            let navigation = UINavigationController(rootViewController: viewController ?? UIViewController())
-//            navigation.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
-//            
-//            return navigation
-//        }()
+        let firstViewController : UINavigationController = {
+            let viewController = UIStoryboard(name: String(describing: HomeViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
+            let navigation = UINavigationController(rootViewController: viewController ?? UIViewController())
+            navigation.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
+            
+            return navigation
+        }()
         
         let secondViewController : UINavigationController = {
             let viewController = UIStoryboard(name: String(describing: ChatViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ChatViewController.self)) as? ChatViewController
@@ -41,7 +41,7 @@ class TabBarController: UITabBarController {
             return navigation
         }()
         
-        viewControllers = [/*firstViewController,*/ secondViewController, lastViewController]
+        viewControllers = [firstViewController, secondViewController, lastViewController]
     }
     
     func configLayoutTabBar() {

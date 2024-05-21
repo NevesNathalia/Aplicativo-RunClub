@@ -10,6 +10,7 @@ import UIKit
 class EditProfileUserViewController: UIViewController {
 
     @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var aboutTextField: UITextField!
     @IBOutlet weak var interestLabel: UILabel!
     @IBOutlet weak var interestTextField: UITextField!
@@ -38,6 +39,7 @@ class EditProfileUserViewController: UIViewController {
         configTextField(textField: interestTextField)
         configTextField(textField: lifestyleTextField)
         configTextField(textField: moreTextField)
+        configButton(button: saveButton)
         configImageView(image: userImage1)
         configImageView(image: userImage2)
         configImageView(image: userImage3)
@@ -54,7 +56,19 @@ class EditProfileUserViewController: UIViewController {
         textField.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 0.26)
     }
     
+    func configButton(button: UIButton) {
+        button.setTitle("Salvar", for: .normal)
+        button.tintColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+    }
+    
     func configImageView(image: UIImageView) {
         image.image = UIImage(named: "profile")
+    }
+    
+    @IBAction func tappedToSaveButton(_ sender: Any) {
+        let profile = UIStoryboard(name: String(describing: ProfileUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ProfileUserViewController.self)) as? ProfileUserViewController
+        
+        navigationController?.pushViewController(profile ?? UIViewController(), animated: true)
+        
     }
 }

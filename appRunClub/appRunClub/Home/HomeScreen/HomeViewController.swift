@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         private func configTableView() {
             tableViewHome.delegate = self
             tableViewHome.dataSource = self
+            tableViewHome.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.identifier)
         }
 
         func configImages(){
@@ -30,8 +31,6 @@ class HomeViewController: UIViewController {
             magnifyingGlass.tintColor = .black
             hamburgerIcon.tintColor = .black
         }
-        
-
     }
 
     extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -40,10 +39,9 @@ class HomeViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableViewHome.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell
+            cell?.setUpCell(data: User(image: UIImage(named: "person.circle.fill") ?? UIImage(), name: "Nome do Usuário", mensage: "", location: "Localização", description: "descrição"))
             return cell ?? UITableViewCell()
         }
-        
-        
     }
 

@@ -111,9 +111,9 @@ class SignUpUserViewController: UIViewController {
             if error != nil {
                 self.alert(title: "Erro ao cadastrar", messsage: error?.localizedDescription ?? "")
             } else {
-                let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
-            
-                self.navigationController?.pushViewController(login, animated: true)
+                let tabBar = UIStoryboard(name: String(describing: TabBarController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: TabBarController.self)) as? TabBarController
+                
+                self.navigationController?.pushViewController(tabBar ?? UIViewController(), animated: true)
             }
         })
     }

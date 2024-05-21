@@ -18,7 +18,6 @@ class HomeTableViewCell: UITableViewCell {
     
     static let identifier: String = String(describing: HomeTableViewCell.self)
         
-        
         static func nib() -> UINib {
             return UINib(nibName: identifier, bundle: nil)
         }
@@ -27,19 +26,19 @@ class HomeTableViewCell: UITableViewCell {
             super.awakeFromNib()
             //configCollectionView()
             configImage()
-            configLabels(label: userName, texts: "Otavio Astrath", font: .systemFont(ofSize: 16.0, weight: .semibold))
-            configLabels(label: userLocation, texts: "Florianópolis - SC", font: .systemFont(ofSize: 14.0, weight: .thin))
-            configLabels(label: userDescription, texts: "Sou apaixonado por esportes de todos os tipos", font: .systemFont(ofSize: 14.0, weight: .medium))
+            configLabels(label: userName,/* texts: "Otavio Astrath",*/ font: .systemFont(ofSize: 16.0, weight: .semibold))
+            configLabels(label: userLocation, /*texts: "Florianópolis - SC",*/ font: .systemFont(ofSize: 14.0, weight: .thin))
+            configLabels(label: userDescription,/* texts: "Sou apaixonado por esportes de todos os tipos",*/ font: .systemFont(ofSize: 14.0, weight: .medium))
             configButton(button: addUserButton, clipsToBounds: true, float: 100.0, text: "Adicionar", color: UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0))
         }
         
-        func configLabels(label: UILabel, texts: String, font: UIFont ) {
-            label.text = texts
+        func configLabels(label: UILabel, /*texts: String,*/ font: UIFont ) {
+//            label.text = texts
             label.font = font
         }
         
         func configImage() {
-            userPhoto.image = UIImage(systemName: "person.circle.fill")
+//            userPhoto.image = UIImage(systemName: "person.circle.fill")
             userPhoto.tintColor = .systemGray3
         }
         
@@ -72,12 +71,12 @@ class HomeTableViewCell: UITableViewCell {
 
     extension HomeTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 5
+            return 4
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as? HomeCollectionViewCell
-            
+            cell?.setUpCell(data: UIImage(named: "profile") ?? UIImage())
             return cell ?? UICollectionViewCell()
         }
         
