@@ -9,6 +9,7 @@ import UIKit
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -22,6 +23,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var dontHaveAnAccountLabel: UILabel!
     @IBOutlet weak var toSignUpButton: UIButton!
+    @IBOutlet weak var loginGoogleButton: UIButton!
+    @IBOutlet weak var googleImage: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
@@ -34,6 +37,7 @@ class LoginViewController: UIViewController {
         configLabels()
         configButtons()
         configTextFields()
+        configImageButton(image: googleImage)
         self.auth = Auth.auth()
     }
     
@@ -72,17 +76,31 @@ class LoginViewController: UIViewController {
         passwordForgotButton.setTitle("Esqueceu a senha?", for: .normal)
         submitButton.setTitle("Log In", for: .normal)
         toSignUpButton.setTitle("Cadastre-se", for: .normal)
+        loginGoogleButton.setTitle("Fazer login com Google", for: .normal)
         // Colors
         passwordForgotButton.setTitleColor(UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), for: .normal)
         submitButton.backgroundColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
         toSignUpButton.setTitleColor(UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), for: .normal)
+        loginGoogleButton.setTitleColor(.black, for: .normal)
         // Corner Radius
-        submitButton.layer.cornerRadius = 20.0
         submitButton.clipsToBounds = true
+        submitButton.layer.cornerRadius = 20.0
+        loginGoogleButton.clipsToBounds = true
+        loginGoogleButton.layer.cornerRadius = 20.0
+        //Border
         submitButton.layer.borderWidth = 1.0
         submitButton.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
         submitButton.layer.borderColor = CGColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
-    } 
+        loginGoogleButton.layer.borderWidth = 1.0
+        loginGoogleButton.layer.borderColor = UIColor.systemGray3.cgColor
+        loginGoogleButton.tintColor = .white
+    }
+    
+    
+    func configImageButton(image: UIImageView) {
+        image.image = UIImage(named: "logo.google")
+        
+    }
     
     func showAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -135,4 +153,43 @@ class LoginViewController: UIViewController {
         
         navigationController?.pushViewController(signUp ?? UIViewController(), animated: true)
     }
+    
+    @IBAction func tappedLoginGoogleButton(_ sender: Any) {
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+          guard error == nil else {
+           return
+          }
+
+          guard let user = result?.user,
+            let idToken = user.idToken?.tokenString
+          else {
+           return
+          }
+
+          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                         accessToken: user.accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential) { result, error in
+                
+                if error != nil {
+                    self.showAlert(title: "Falha ao Logar", message: "Tente novamente mais tarde.")
+                } else {
+                    let tabBar = UIStoryboard(name: String(describing: TabBarController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: TabBarController.self))
+                    
+                    self.navigationController?.pushViewController(tabBar, animated: true)
+                }
+            }
+
+        }
+        
+        
+    }
+    
+    
 }
