@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class ResetPasswordViewController: UIViewController {
 
@@ -55,14 +58,34 @@ class ResetPasswordViewController: UIViewController {
         button.tintColor = color
     }
     
+    func alert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func tappedBackButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func tappedShowLogin(_ sender: Any) {
-        let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
-    
-        navigationController?.pushViewController(login, animated: true)
+        guard let email = emailTextField.text, !email.isEmpty else {
+            self.alert(title: "", message: "Por favor, insira um email válido.")
+                   return
+               }
+        
+        let auth = Auth.auth()
+        
+        auth.sendPasswordReset(withEmail: email) { (error) in
+            if error != nil {
+                self.alert(title: "Error", message: "Não foi possível enviar email de redefinição. Verifique se o campo de email está vazio ou inválido." )
+                return
+            } else {
+                self.alert(title: "Ótimo!", message: "Email de redefinição de senha enviado com sucesso.")
+              
+            }
+        }
         
     }
     
