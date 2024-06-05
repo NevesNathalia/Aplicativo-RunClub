@@ -21,7 +21,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         configTableView()
         configLabel(label: chatLabel)
-        configButton(button: groupButton, text: "+ Group", color: UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0), number: 20.0, bool: true)
+        configButton(button: groupButton, text: "+ Grupo", color: UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0), number: 20.0, bool: true)
         view.backgroundColor = UIColor(red: 226/255, green: 247/255, blue: 239/255, alpha: 1.0)
     }
     
