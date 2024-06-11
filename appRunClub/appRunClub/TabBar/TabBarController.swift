@@ -21,6 +21,7 @@ class TabBarController: UITabBarController {
             let viewController = UIStoryboard(name: String(describing: HomeViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
             let navigation = UINavigationController(rootViewController: viewController ?? UIViewController())
             navigation.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
+            navigation.navigationBar.backgroundColor = UIColor(red: 8/255, green: 32/255, blue: 22/255, alpha: 1.0)
             
             return navigation
         }()
@@ -29,7 +30,8 @@ class TabBarController: UITabBarController {
             let viewController = UIStoryboard(name: String(describing: ChatViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ChatViewController.self)) as? ChatViewController
             let navigation = UINavigationController(rootViewController: viewController ?? UIViewController())
             navigation.tabBarItem = UITabBarItem(title: "Chat", image: UIImage(systemName: "message"), tag: 1)
-            
+            navigation.navigationBar.backgroundColor = UIColor(red: 8/255, green: 32/255, blue: 22/255, alpha: 1.0)
+
             return navigation
         }()
         
@@ -37,7 +39,8 @@ class TabBarController: UITabBarController {
             let viewController = UIStoryboard(name: String(describing: ProfileUserViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ProfileUserViewController.self)) as? ProfileUserViewController
             let navigation = UINavigationController(rootViewController: viewController ?? UIViewController())
             navigation.tabBarItem = UITabBarItem(title: "Perfil", image: UIImage(systemName: "person"), tag: 2)
-            
+            navigation.navigationBar.backgroundColor = UIColor(red: 8/255, green: 32/255, blue: 22/255, alpha: 1.0)
+
             return navigation
         }()
         
@@ -45,7 +48,8 @@ class TabBarController: UITabBarController {
     }
     
     func configLayoutTabBar() {
-        tabBar.backgroundColor = UIColor(red: 226/255, green: 247/255, blue: 239/255, alpha: 1.0)
+        tabBar.backgroundColor = UIColor(red: 78/255, green: 137/255, blue: 109/255, alpha: 1.0)
+        tabBar.tintColor = .white
     }
  
 }

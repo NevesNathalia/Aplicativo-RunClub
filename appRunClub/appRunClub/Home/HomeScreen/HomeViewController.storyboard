@@ -17,45 +17,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-XW-udK">
-                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04x-Mn-4vM">
-                                <rect key="frame" x="148" y="20" width="79" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9w7-QL-nY0">
-                                <rect key="frame" x="15" y="20" width="55" height="37"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="04x-Mn-4vM">
+                                <rect key="frame" x="131" y="20" width="113" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="KKh-Z9-gHt"/>
-                                    <constraint firstAttribute="width" constant="55" id="nDc-j6-95E"/>
+                                    <constraint firstAttribute="height" constant="40" id="j5q-Qj-Uys"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Za-6S-zcA">
-                                <rect key="frame" x="305" y="19" width="55" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-1M-TJ9">
+                                <rect key="frame" x="324" y="20" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="h4d-4b-qnn"/>
-                                    <constraint firstAttribute="height" constant="37" id="oUg-Zj-ttG"/>
+                                    <constraint firstAttribute="width" constant="35" id="N4g-uo-5GL"/>
+                                    <constraint firstAttribute="height" constant="35" id="Ru2-iW-tHG"/>
                                 </constraints>
-                            </imageView>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedSearchUsersButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kSK-Ja-KR9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Za-6S-zcA" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="19" id="2xU-Sq-rvX"/>
                             <constraint firstItem="nTC-XW-udK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="831-2g-MbO"/>
-                            <constraint firstItem="9w7-QL-nY0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aq9-wj-9ZO"/>
-                            <constraint firstItem="nTC-XW-udK" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="b6H-QO-3nj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Za-6S-zcA" secondAttribute="trailing" constant="15" id="dOD-ma-QQ7"/>
-                            <constraint firstItem="nTC-XW-udK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="45" id="hJS-dC-Q6G"/>
+                            <constraint firstItem="04x-Mn-4vM" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="BQF-HD-5WY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="04x-Mn-4vM" secondAttribute="trailing" constant="131" id="MTD-qj-R53"/>
+                            <constraint firstItem="04x-Mn-4vM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="RC1-Yj-kKk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7dQ-1M-TJ9" secondAttribute="trailing" constant="16" id="Vly-Lu-qUA"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="top" secondItem="04x-Mn-4vM" secondAttribute="bottom" id="ZiY-zq-InZ"/>
                             <constraint firstItem="nTC-XW-udK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vor-KV-IP3"/>
-                            <constraint firstItem="9w7-QL-nY0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="zO8-0O-bDM"/>
+                            <constraint firstItem="nTC-XW-udK" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="wFk-7n-DhP"/>
+                            <constraint firstItem="7dQ-1M-TJ9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xh8-6n-Y3U"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="hamburgerIcon" destination="9w7-QL-nY0" id="8VA-US-iZx"/>
-                        <outlet property="magnifyingGlass" destination="1Za-6S-zcA" id="E4f-qN-wyb"/>
                         <outlet property="runClubLogo" destination="04x-Mn-4vM" id="syl-VJ-1fo"/>
+                        <outlet property="searchButton" destination="7dQ-1M-TJ9" id="zof-hX-Xoh"/>
                         <outlet property="tableViewHome" destination="nTC-XW-udK" id="Pve-9H-VET"/>
                     </connections>
                 </viewController>

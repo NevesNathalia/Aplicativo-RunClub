@@ -87,6 +87,17 @@
                                     <constraint firstAttribute="height" constant="70" id="atg-1Y-XhS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIa-3g-P3D">
+                                <rect key="frame" x="15" y="20" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="B3w-lk-Cym"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CpO-8w-fkv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,6 +109,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NjP-VX-d3z" secondAttribute="trailing" constant="15" id="9TM-Xp-PxQ"/>
                             <constraint firstItem="oCa-4k-fI1" firstAttribute="top" secondItem="VNz-wl-FqN" secondAttribute="bottom" constant="25" id="EPW-bI-pUG"/>
                             <constraint firstItem="bd5-fx-1tX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="GeI-Fq-f2c"/>
+                            <constraint firstItem="TIa-3g-P3D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GpK-JB-96e"/>
                             <constraint firstItem="wKh-Fi-bWw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Ouq-Tg-8Mt"/>
                             <constraint firstItem="YAm-wY-1uh" firstAttribute="top" secondItem="bd5-fx-1tX" secondAttribute="bottom" constant="10" id="QKa-gR-lSc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wKh-Fi-bWw" secondAttribute="trailing" constant="15" id="QNY-gn-VXG"/>
@@ -107,6 +119,7 @@
                             <constraint firstItem="X9Y-mb-2ha" firstAttribute="top" secondItem="YAm-wY-1uh" secondAttribute="bottom" constant="5" id="VCM-aI-r4x"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bd5-fx-1tX" secondAttribute="trailing" constant="15" id="cL2-MA-MHW"/>
                             <constraint firstItem="oCa-4k-fI1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dbj-Tk-L1h"/>
+                            <constraint firstItem="TIa-3g-P3D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="gPU-8C-QcV"/>
                             <constraint firstItem="nH6-Z8-Z5R" firstAttribute="top" secondItem="NjP-VX-d3z" secondAttribute="bottom" constant="10" id="gdO-9v-YAI"/>
                             <constraint firstItem="X9Y-mb-2ha" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="h87-cj-aYx"/>
                             <constraint firstItem="nH6-Z8-Z5R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="lDs-3N-deV"/>
@@ -121,6 +134,7 @@
                     </view>
                     <connections>
                         <outlet property="aboutMeView" destination="wKh-Fi-bWw" id="AaC-Ti-Q8s"/>
+                        <outlet property="backButton" destination="TIa-3g-P3D" id="oaR-gG-xKN"/>
                         <outlet property="labelAboutMe" destination="B40-ku-CdB" id="vob-6X-A0y"/>
                         <outlet property="labelExtra" destination="YAm-wY-1uh" id="d3e-CM-k1F"/>
                         <outlet property="labelLifestyle" destination="nH6-Z8-Z5R" id="BEA-5t-Vxr"/>

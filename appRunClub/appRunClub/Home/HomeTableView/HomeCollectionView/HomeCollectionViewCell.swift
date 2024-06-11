@@ -22,8 +22,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
             
         }
         
-        public func setUpCell(data: UIImage) {
-            userPhotos.image = data
+        public func setUpCell(preview: FeedUsers) {
+            userPhotos.image = preview.previewImage
         }
 
     }

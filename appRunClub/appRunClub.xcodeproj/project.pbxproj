@@ -32,6 +32,7 @@
 		2C61AA072BFCF2A80028BE55 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C61AA062BFCF2A80028BE55 /* GoogleSignInSwift */; };
 		2C64EBF42BCC0E6B00CBA85F /* ProfileUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C64EBF12BCC0E6B00CBA85F /* ProfileUserViewController.storyboard */; };
 		2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64EBF22BCC0E6B00CBA85F /* ProfileUserViewController.swift */; };
+		2C69C1502C11F66900EB7A39 /* FeedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69C14F2C11F66900EB7A39 /* FeedUsers.swift */; };
 		2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD7C162BD198C10006BCEE /* ContactsTableViewCell.swift */; };
 		2CAD7C192BD198C10006BCEE /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD7C172BD198C10006BCEE /* ContactsTableViewCell.xib */; };
 		2CAD7C1B2BD1995C0006BCEE /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD7C1A2BD1995C0006BCEE /* Contacts.swift */; };
@@ -111,6 +112,7 @@
 		2C61AA012BFCF0AC0028BE55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C64EBF12BCC0E6B00CBA85F /* ProfileUserViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileUserViewController.storyboard; sourceTree = "<group>"; };
 		2C64EBF22BCC0E6B00CBA85F /* ProfileUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserViewController.swift; sourceTree = "<group>"; };
+		2C69C14F2C11F66900EB7A39 /* FeedUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUsers.swift; sourceTree = "<group>"; };
 		2CAD7C162BD198C10006BCEE /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		2CAD7C172BD198C10006BCEE /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 		2CAD7C1A2BD1995C0006BCEE /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				2C41B71E2BD006B400EF5C38 /* User.swift */,
 				2CAD7C1A2BD1995C0006BCEE /* Contacts.swift */,
 				2C5CBE572C0FAB7A0095EBD4 /* Message.swift */,
+				2C69C14F2C11F66900EB7A39 /* FeedUsers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -472,8 +475,8 @@
 		E659A2262BF6718B006A94CE /* HomeCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */,
 				E659A2302BF74DB9006A94CE /* HomeCollectionViewCell.xib */,
+				E659A22F2BF74DB9006A94CE /* HomeCollectionViewCell.swift */,
 			);
 			path = HomeCollectionView;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				2C64EBF52BCC0E6B00CBA85F /* ProfileUserViewController.swift in Sources */,
 				2CAD7C1B2BD1995C0006BCEE /* Contacts.swift in Sources */,
 				2CAD7C182BD198C10006BCEE /* ContactsTableViewCell.swift in Sources */,
+				2C69C1502C11F66900EB7A39 /* FeedUsers.swift in Sources */,
 				2CBD4BDB2BA9C73F0052CD7A /* AppDelegate.swift in Sources */,
 				E659A2232BF6682D006A94CE /* HomeViewController.swift in Sources */,
 				2C5CBE582C0FAB7A0095EBD4 /* Message.swift in Sources */,

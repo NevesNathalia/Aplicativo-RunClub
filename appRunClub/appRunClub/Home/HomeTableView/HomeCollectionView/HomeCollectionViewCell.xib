@@ -10,32 +10,29 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="appRunClub" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="447" height="246"/>
+            <rect key="frame" x="0.0" y="0.0" width="431" height="306"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="447" height="246"/>
+                <rect key="frame" x="0.0" y="0.0" width="431" height="306"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R5w-Mu-bK5">
-                        <rect key="frame" x="0.0" y="0.0" width="204" height="246"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="204" id="kyg-YE-axA"/>
-                            <constraint firstAttribute="height" constant="246" id="mCi-PP-XF9"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcs-ri-Q5x">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="306"/>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="R5w-Mu-bK5" secondAttribute="bottom" id="c46-zr-TUs"/>
-                <constraint firstItem="R5w-Mu-bK5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gZk-20-pdR"/>
-                <constraint firstItem="R5w-Mu-bK5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nyC-19-pNW"/>
+                <constraint firstAttribute="trailing" secondItem="bcs-ri-Q5x" secondAttribute="trailing" id="1Br-fy-C2q"/>
+                <constraint firstAttribute="bottom" secondItem="bcs-ri-Q5x" secondAttribute="bottom" id="JsH-oZ-N5b"/>
+                <constraint firstItem="bcs-ri-Q5x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lfa-M1-VN7"/>
+                <constraint firstItem="bcs-ri-Q5x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XfD-PR-EJF"/>
             </constraints>
-            <size key="customSize" width="447" height="246"/>
+            <size key="customSize" width="431" height="306"/>
             <connections>
-                <outlet property="userPhotos" destination="R5w-Mu-bK5" id="bli-rw-li5"/>
+                <outlet property="userPhotos" destination="bcs-ri-Q5x" id="AVo-SM-N9X"/>
             </connections>
-            <point key="canvasLocation" x="177.86259541984731" y="28.87323943661972"/>
+            <point key="canvasLocation" x="139.69465648854961" y="-10.563380281690142"/>
         </collectionViewCell>
     </objects>
 </document>
