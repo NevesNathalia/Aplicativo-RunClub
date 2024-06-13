@@ -71,10 +71,10 @@ class CustomGroupViewController: UIViewController {
     
     
     @IBAction func tappedOpenGalery(_ sender: Any) {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-     
-        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true)
     }
     
     @IBAction func tappedCreateGroupButton(_ sender: Any) {

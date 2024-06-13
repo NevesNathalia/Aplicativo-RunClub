@@ -23,6 +23,10 @@ class ResetPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+
+    private func setupUI() {
         configLabels(label: resetLabel, text: "Redefinir Senha", font: .systemFont(ofSize: 30, weight: .medium), aligment: .center)
         resetLabel.tintColor = UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0)
         configLabels(label: descriptionLabel, text: "Digite o e-mail associado à sua conta e enviaremos um e-mail com instruções para redefinir sua senha.", font: .systemFont(ofSize: 18), aligment: .center)
@@ -33,7 +37,7 @@ class ResetPasswordViewController: UIViewController {
         configButton(button: confirmButton, text: "Confirmar", color: UIColor(red: 109/255, green: 181/255, blue: 139/255, alpha: 1.0), number: 20.0, bool: true)
         configButton(button: backButton, text: "Voltar", color: .black, number: 0.0, bool: false)
     }
-
+    
     func configLabels(label: UILabel, text: String, font: UIFont, aligment: NSTextAlignment) {
         label.text = text
         label.font = font

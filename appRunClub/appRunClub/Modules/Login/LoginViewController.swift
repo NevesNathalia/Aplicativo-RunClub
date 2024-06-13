@@ -30,6 +30,10 @@ class LoginViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     var auth: Auth?
     
     override func viewDidLoad() {
@@ -191,5 +195,5 @@ class LoginViewController: UIViewController {
         
     }
     
-    
+
 }
