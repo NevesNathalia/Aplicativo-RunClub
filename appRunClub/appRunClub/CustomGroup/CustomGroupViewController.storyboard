@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,13 +25,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-zc-L5x">
-                                <rect key="frame" x="36" y="101" width="32" height="32"/>
+                                <rect key="frame" x="36" y="92" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="jzx-Hz-f9g"/>
-                                    <constraint firstAttribute="width" constant="32" id="wZj-Yv-ApL"/>
+                                    <constraint firstAttribute="height" constant="50" id="jzx-Hz-f9g"/>
+                                    <constraint firstAttribute="width" constant="50" id="wZj-Yv-ApL"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="tappedOpenGalery:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uRz-lD-8bi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWI-aU-3h7">
                                 <rect key="frame" x="77" y="253" width="221" height="40"/>
@@ -58,6 +61,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zXb-eG-nh0">
+                                <rect key="frame" x="36" y="97" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sIq-FD-noU"/>
+                                    <constraint firstAttribute="width" constant="40" id="uHR-RD-o36"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,9 +78,11 @@
                             <constraint firstItem="ieT-T2-cgP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UNb-Ow-Ysy"/>
                             <constraint firstItem="Aww-dQ-dQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="6" id="YUk-Fy-pJW"/>
                             <constraint firstItem="TWI-aU-3h7" firstAttribute="top" secondItem="T5X-xO-mzK" secondAttribute="bottom" constant="100" id="ZLR-dN-r72"/>
+                            <constraint firstItem="zXb-eG-nh0" firstAttribute="leading" secondItem="yGB-zc-L5x" secondAttribute="leading" id="aOV-8z-yXY"/>
                             <constraint firstItem="T5X-xO-mzK" firstAttribute="top" secondItem="ieT-T2-cgP" secondAttribute="bottom" constant="26" id="bBO-UB-28c"/>
                             <constraint firstItem="ieT-T2-cgP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cVJ-nb-2ro"/>
                             <constraint firstItem="TWI-aU-3h7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="77" id="gZ0-i0-FO2"/>
+                            <constraint firstItem="zXb-eG-nh0" firstAttribute="centerY" secondItem="yGB-zc-L5x" secondAttribute="centerY" id="lYj-Ig-iAD"/>
                             <constraint firstItem="Aww-dQ-dQf" firstAttribute="centerX" secondItem="T5X-xO-mzK" secondAttribute="centerX" id="rTP-NX-mp7"/>
                             <constraint firstItem="yGB-zc-L5x" firstAttribute="centerY" secondItem="T5X-xO-mzK" secondAttribute="centerY" id="vOh-VY-2cO"/>
                             <constraint firstItem="yGB-zc-L5x" firstAttribute="leading" secondItem="T5X-xO-mzK" secondAttribute="leading" constant="20" id="x4B-Y3-mJ4"/>
@@ -79,6 +91,7 @@
                     <connections>
                         <outlet property="backButton" destination="ieT-T2-cgP" id="TRB-19-mvj"/>
                         <outlet property="createButton" destination="TWI-aU-3h7" id="cWP-Yj-dc5"/>
+                        <outlet property="imageGroup" destination="zXb-eG-nh0" id="pxa-pN-R0c"/>
                         <outlet property="nameGroupTextField" destination="T5X-xO-mzK" id="Smj-TK-Qnb"/>
                         <outlet property="newGroupLabel" destination="Aww-dQ-dQf" id="84T-Ra-Ur9"/>
                         <outlet property="photoButton" destination="yGB-zc-L5x" id="fJT-nD-jDg"/>

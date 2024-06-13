@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-P1-Xkb">
-                                <rect key="frame" x="0.0" y="164" width="393" height="654"/>
+                                <rect key="frame" x="0.0" y="104" width="393" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-10-mYV">
@@ -31,14 +31,6 @@
                                     <action selector="tappedAdvanceButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lvq-5D-l4I"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-Ya-3CV">
-                                <rect key="frame" x="20" y="114" width="353" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4A7-fM-4fe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPO-S1-poa">
                                 <rect key="frame" x="0.0" y="59" width="75" height="35"/>
                                 <constraints>
@@ -60,26 +52,22 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gnE-P1-Xkb" firstAttribute="top" secondItem="pJU-I8-iMQ" secondAttribute="bottom" constant="17" id="736-Bo-CaG"/>
                             <constraint firstItem="gnE-P1-Xkb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EIs-W4-9ws"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7B1-10-mYV" secondAttribute="trailing" id="OrZ-kT-Sug"/>
-                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TFU-TT-4ce"/>
                             <constraint firstItem="pJU-I8-iMQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="7" id="U7D-WM-i2F"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gnE-P1-Xkb" secondAttribute="trailing" id="YGO-Sk-Jcg"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YPz-Ya-3CV" secondAttribute="trailing" constant="20" id="bmG-ao-iiL"/>
                             <constraint firstItem="EPO-S1-poa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cVz-CY-sys"/>
-                            <constraint firstItem="gnE-P1-Xkb" firstAttribute="top" secondItem="YPz-Ya-3CV" secondAttribute="bottom" constant="10" id="kQG-KG-YEN"/>
-                            <constraint firstItem="YPz-Ya-3CV" firstAttribute="top" secondItem="pJU-I8-iMQ" secondAttribute="bottom" constant="27" id="smX-qN-YC5"/>
+                            <constraint firstItem="pJU-I8-iMQ" firstAttribute="centerX" secondItem="gnE-P1-Xkb" secondAttribute="centerX" id="oKK-dw-pKK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gnE-P1-Xkb" secondAttribute="bottom" id="vHc-qh-3fN"/>
                             <constraint firstItem="EPO-S1-poa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="w8o-GW-yzk"/>
                             <constraint firstItem="7B1-10-mYV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wPG-AI-p0r"/>
-                            <constraint firstItem="pJU-I8-iMQ" firstAttribute="centerX" secondItem="YPz-Ya-3CV" secondAttribute="centerX" id="y3l-JH-R03"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addMembersLabel" destination="pJU-I8-iMQ" id="ztw-5O-bQu"/>
                         <outlet property="advanceButton" destination="7B1-10-mYV" id="ffP-41-bTJ"/>
                         <outlet property="backButton" destination="EPO-S1-poa" id="YJs-9u-tYY"/>
-                        <outlet property="searchTextField" destination="YPz-Ya-3CV" id="rt2-x0-oFM"/>
                         <outlet property="tableView" destination="gnE-P1-Xkb" id="TgI-VY-Ikp"/>
                     </connections>
                 </viewController>

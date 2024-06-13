@@ -11,6 +11,6 @@ import UIKit
 struct Contacts {
     var image: UIImage
     var name: String
-    var isEnabled: Bool
+    var isEnableButton: Bool
 }
 

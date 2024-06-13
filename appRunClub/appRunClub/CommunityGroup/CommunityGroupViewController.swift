@@ -26,7 +26,7 @@ class CommunityGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 1.0)
+        view.backgroundColor =  UIColor(red: 27/255, green: 67/255, blue: 50/255, alpha: 1.0)
         configView(view: viewBottom, color: UIColor(red: 162/255, green: 213/255, blue: 198/255, alpha: 0.56))
        configBarView(view: barView)
         configNavigationBar(button: backButton)
@@ -38,8 +38,8 @@ class CommunityGroupViewController: UIViewController {
         
     }
     func configNavigationBar(button: UIButton) {
-        button.setTitle("Voltar", for: .normal)
-        button.tintColor = .black
+        button.setTitle("", for: .normal)
+        button.setImage(UIImage(named: "back.icon"), for: .normal)
     }
     
     func configView(view: UIView, color: UIColor) {
@@ -48,6 +48,7 @@ class CommunityGroupViewController: UIViewController {
     
     func configImageView(image: UIImageView) {
         image.image = UIImage(named: "profile")
+        image.layer.cornerRadius = 20
     }
     
     func configTableView() {
@@ -68,7 +69,8 @@ class CommunityGroupViewController: UIViewController {
     
     func configLabel(label: UILabel) {
         label.text = "Contato"
-        label.font = .systemFont(ofSize: 16)
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 16, weight: .semibold)
     }
     
     func configTextField(textField: UITextField) {
@@ -84,7 +86,7 @@ class CommunityGroupViewController: UIViewController {
     func configButton(button: UIButton) {
         button.setTitle("", for: .normal)
         button.setImage(UIImage(systemName: "paperplane.fill"), for: .normal)
-        button.tintColor = UIColor(red: 0/255, green: 104/255, blue: 96/255, alpha: 0.76)
+        button.tintColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.76)
         button.clipsToBounds = true
         button.layer.cornerRadius = 22.5
         button.layer.shadowColor = UIColor.black.cgColor

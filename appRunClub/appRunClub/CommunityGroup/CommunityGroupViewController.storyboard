@@ -56,7 +56,6 @@
                                                     <constraint firstAttribute="width" constant="50" id="j2h-9w-p75"/>
                                                     <constraint firstAttribute="height" constant="50" id="qYu-Yp-kad"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.0" green="0.40784313729999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                                 <connections>
@@ -83,7 +82,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.64313727620000005" green="0.83529412749999998" blue="0.77647060160000003" alpha="0.55740376660000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="bN5-3a-QPZ" firstAttribute="leading" secondItem="h3e-nM-7Iq" secondAttribute="leading" constant="20" id="3DK-Ks-gAy"/>
                                     <constraint firstItem="bN5-3a-QPZ" firstAttribute="centerY" secondItem="h3e-nM-7Iq" secondAttribute="centerY" id="BcQ-aT-Xg0"/>
@@ -93,7 +91,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.32156862749999998" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.2627450980392157" blue="0.19607843137254902" alpha="0.70150144867549669" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="h3e-nM-7Iq" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="0JQ-EP-lnk"/>
                             <constraint firstItem="Bxr-w8-iS6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1MT-m8-O5a"/>

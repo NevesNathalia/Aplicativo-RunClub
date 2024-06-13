@@ -11,7 +11,7 @@ import UIKit
 struct User {
     var image: UIImage
     var name: String
-    var mensage: String
+    var message: String
     var location: String
     var description: String
 }

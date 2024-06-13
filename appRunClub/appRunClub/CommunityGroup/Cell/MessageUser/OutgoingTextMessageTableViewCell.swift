@@ -14,7 +14,7 @@ class OutgoingTextMessageTableViewCell: UITableViewCell {
     lazy var myMessageView: UIView = {
        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 82/255, green: 183/255, blue: 136/255, alpha: 0.9)
         view.layer.cornerRadius = 20
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
         return view

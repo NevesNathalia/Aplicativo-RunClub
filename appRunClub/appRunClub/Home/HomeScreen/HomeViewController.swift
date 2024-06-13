@@ -14,10 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tableViewHome: UITableView!
     
-    let feedUsers: [User] = [User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", mensage:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
-                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", mensage:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
-                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", mensage:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
-                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", mensage:  "", location:  "Localização", description: "Breve descrição sobre o usuário")
+    let feedUsers: [User] = [User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", message:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
+                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", message:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
+                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", message:  "", location:  "Localização", description: "Breve descrição sobre o usuário"),
+                             User(image: UIImage(named: "profile") ?? UIImage(), name: "Nome do Usuário", message:  "", location:  "Localização", description: "Breve descrição sobre o usuário")
     ]
     
     var lastContentOffSet: CGFloat = 0

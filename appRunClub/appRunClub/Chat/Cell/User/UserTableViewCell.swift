@@ -21,7 +21,12 @@ class UserTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        configImage(image: userImageView)
         configLabels()
+    }
+    
+    func configImage(image: UIImageView) {
+        image.layer.cornerRadius = 23
     }
     
     func configLabels() {
@@ -33,6 +38,6 @@ class UserTableViewCell: UITableViewCell {
     public func setupCell(data: User) {
         userImageView.image = data.image
         nameUserLabel.text = data.name
-        mensageLabel.text = data.mensage
+        mensageLabel.text = data.message
     }
 }
