@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    
     @IBOutlet weak var runClubLogo: UIImageView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tableViewHome: UITableView!
@@ -48,6 +47,9 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func tappedSearchUsersButton(_ sender: Any) {
+        let addNewUser = UIStoryboard(name: String(describing: AddNewUserViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: AddNewUserViewController.self))
+        
+        navigationController?.pushViewController(addNewUser, animated: true)
         
     }
     

@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 struct User {
-    var image: UIImage
-    var name: String
-    var message: String
-    var location: String
-    var description: String
+    var image: UIImage?
+    var name: String?
+    var message: String?
+    var location: String?
+    var description: String?
 }

@@ -14,7 +14,6 @@ class CustomGroupViewController: UIViewController {
     @IBOutlet weak var newGroupLabel: UILabel!
     @IBOutlet weak var nameGroupTextField: UITextField!
     @IBOutlet weak var photoButton: UIButton!
-    @IBOutlet weak var imageGroup: UIImageView!
     @IBOutlet weak var createButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +25,6 @@ class CustomGroupViewController: UIViewController {
         configNavigationBar(button: backButton)
         configLabel(label: newGroupLabel)
         configTextField(textField: nameGroupTextField)
-        configImageView(image: imageGroup)
         configPhotoButton(button: photoButton)
         configButton(button: createButton)
     }
@@ -47,10 +45,6 @@ class CustomGroupViewController: UIViewController {
         textField.placeholder = "Nome do grupo"
         textField.backgroundColor = UIColor(red: 118/255, green: 118/255, blue: 128/255, alpha: 0.14)
         textField.textAlignment = .center
-    }
-    
-    func configImageView(image: UIImageView){
-        image.isHidden = true
     }
     
     func configPhotoButton(button: UIButton) {

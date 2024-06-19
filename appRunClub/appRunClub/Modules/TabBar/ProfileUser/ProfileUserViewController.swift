@@ -43,13 +43,14 @@ class ProfileUserViewController: UIViewController {
         configTextField(textField: interestTextField)
         configTextField(textField: lifestyleTextField)
         configTextField(textField: moreTextField)
-        configImageView(userImage: userImageView, image: "person.circle.fill", color: .systemGray3)
+        configImageView(userImage: userImageView, image: "profile", color: .systemGray3)
 
     }
 
     func configImageView(userImage: UIImageView, image: String, color: UIColor) {
-        userImage.image = UIImage(systemName: image)
+        userImage.image = UIImage(named: image)
         userImage.tintColor = color
+        userImage.layer.cornerRadius = 25
     }
     
     func configLabel(label: UILabel, text: String, font: UIFont, alignment: NSTextAlignment) {
