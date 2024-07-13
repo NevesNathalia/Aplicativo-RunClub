@@ -41,6 +41,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.text = "gabriel@gmail.com"
+        passwordTextField.text = "123456"
        setupCofigElements()
         alert = Alert(controller: self)
         self.auth = Auth.auth()

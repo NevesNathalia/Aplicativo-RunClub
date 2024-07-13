@@ -25,13 +25,13 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var contactButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    weak private var delegate: NavViewProtocol?
+    private weak var delegate: NavViewProtocol?
     
     func delegate(delegate: NavViewProtocol?) {
         self.delegate = delegate
     }
     
-    var viewModel: ChatViewModel = ChatViewModel()
+    var viewModel: ChatViewModel?
     
     var auth: Auth?
     var db: Firestore?
@@ -48,6 +48,11 @@ class ChatViewController: UIViewController {
     var conversationListener: ListenerRegistration?
     var isContactButtonSelected = true
     
+    required init?(coder: NSCoder) {
+        self.viewModel = ChatViewModel()
+        super.init(coder: coder)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
     }
@@ -59,6 +64,7 @@ class ChatViewController: UIViewController {
         configButton(button: conversationButton, image: UIImage(systemName: "message") ?? UIImage())
         configButton(button: contactButton, image: UIImage(systemName: "person.2") ?? UIImage())
         configColectionView()
+        delegate(delegate: self)
         configAlert()
         configIdentifierFirebase()
         configContact()
@@ -154,7 +160,6 @@ class ChatViewController: UIViewController {
                 self.reloadCollectionView()
             }
         })
-        
     }
     
     @IBAction func tappedConversationButton(_ sender: Any) {
@@ -171,7 +176,7 @@ class ChatViewController: UIViewController {
     
 }
 
-extension ChatViewController: UICollectionViewDelegate , UICollectionViewDataSource {
+extension ChatViewController: UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if self.screenContact ?? false {
             return listContact.count + 1
@@ -198,7 +203,15 @@ extension ChatViewController: UICollectionViewDelegate , UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        if self.screenContact ?? false {
+            if indexPath.row == self.listContact.count {
+                self.alert?.addContact(completion: { value in
+                    self.contact?.addContact(email: value, emailUserConnected: self.emailUserLogged ?? "", idUser: self.idUserLogged ?? "")
+                })
+            }
+        } else {
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -16,7 +16,7 @@ protocol ContactProtocol: AnyObject {
 
 class ContactController {
     
-    weak var delegate: ContactProtocol?
+    private weak var delegate: ContactProtocol?
     
     public func delegate(delegate: ContactProtocol?) {
         self.delegate = delegate
