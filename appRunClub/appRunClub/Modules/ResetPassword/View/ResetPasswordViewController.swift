@@ -82,26 +82,26 @@ class ResetPasswordViewController: UIViewController {
         let validateEmail = viewModel.validadeEmail(emailTextField.text ?? "")
         
         if validateEmail {
-            validadeResetPassword()
+            validateResetPassword()
         } else {
             invalidEmail()
         }
     }
     
-    func validadeResetPassword() {
+    func validateResetPassword() {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines), !email.isEmpty else {
             return
         }
         
         auth?.sendPasswordReset(withEmail: email, completion: { error in
-            if let error = error {
+            if error != nil {
                 self.alert?.createAlert(title: "Ocorreu um Erro", message: "Não foi possível enviar email de redefinição. Tente novamente!")
             } else {
                 self.alert?.createAlert(title: "", message: "Email de redefinição de senha enviado com sucesso!")
                 
-                let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
+//                let login = UIStoryboard(name: String(describing: LoginViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: LoginViewController.self))
                 
-                self.navigationController?.pushViewController(login, animated: true)
+                self.navigationController?.popViewController(animated: true)
             }
         })
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResetPasswordViewModel {
+class ResetPasswordViewModel: NSObject {
     
     func validadeEmail(_ email: String) -> Bool {
         if email.isEmpty || ((!email.localizedStandardContains("@")) || (!email.localizedStandardContains(".com"))) {

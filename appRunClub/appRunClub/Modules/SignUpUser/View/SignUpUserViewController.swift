@@ -105,38 +105,6 @@ class SignUpUserViewController: UIViewController {
     }
     
     @IBAction func tappedSignUpButton(_ sender: Any) {
-//        guard let emailValid = emailTextField.text, let passwordValid = passwordTextField.text else {return}
-
-//        guard let email = emailTextField.text, !email.isEmpty else {
-//            alert(title: "Erro ao cadastrar", messsage: "O campo de e-mail está vazio.")
-//               return
-//           }
-//           
-//           guard let password = passwordTextField.text, !password.isEmpty else {
-//               alert(title: "Erro ao cadastrar", messsage: "O campo de senha está vazio.")
-//               return
-//           }
-//           
-//           guard let confirmPassword = confirmPasswordTextField.text, !confirmPassword.isEmpty else {
-//               alert(title: "Erro ao cadastrar", messsage: "O campo de confirmação de senha está vazio.")
-//               return
-//           }
-//           
-//           guard password == confirmPassword else {
-//               alert(title: "Erro ao cadastrar", messsage: "As senhas digitadas não coincidem.")
-//               return
-//           }
-//        
-//        self.auth?.createUser(withEmail: emailValid, password: passwordValid, completion: { result, error in
-//            
-//            if error != nil {
-//                self.alert?.createAlert(title: "Erro ao cadastrar", message: "o email informado já está associado a uma conta existente.")
-//            } else {
-//                let tabBar = UIStoryboard(name: String(describing: TabBarController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: TabBarController.self)) as? TabBarController
-//                
-//                self.navigationController?.pushViewController(tabBar ?? UIViewController(), animated: true)
-//            }
-//        })
         
         guard let nameValue = nameUserTextField.text,
                 let emailValue = emailTextField.text,

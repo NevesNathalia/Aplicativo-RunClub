@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpUserViewModel {
+class SignUpUserViewModel: NSObject {
     
     private var passwordData = ""
     

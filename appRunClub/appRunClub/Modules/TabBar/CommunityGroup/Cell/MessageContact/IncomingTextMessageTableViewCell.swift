@@ -16,7 +16,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.3)
         view.layer.cornerRadius = 20
-        view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
+        view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
         return view
     }()
     
@@ -25,6 +25,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor.white
         label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 14)
         return label
     }()
     
@@ -44,6 +45,7 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
     private func addElements() {
        addSubview(contactMessageView)
         contactMessageView.addSubview(messageLabel)
+        isSelected = false
     }
     
     private func configConstrants() {
@@ -59,8 +61,8 @@ class IncomingTextMessageTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell(data: Message) {
-        messageLabel.text = data.message
+    public func setupCell(data: TextMessage) {
+        messageLabel.text = data.text
     }
 }
 

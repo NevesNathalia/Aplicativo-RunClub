@@ -106,7 +106,7 @@ class LoginViewController: UIViewController {
         
     }
 
-    @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
+    @IBAction func tappedForgetPasswordButton(_ sender: UIButton) {
         let resetPasword = UIStoryboard(name: String(describing: ResetPasswordViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: ResetPasswordViewController.self)) as? ResetPasswordViewController
         
         navigationController?.pushViewController(resetPasword ?? UIViewController(), animated: true)

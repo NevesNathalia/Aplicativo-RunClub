@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="Y6W-OH-hqX" customClass="ChatViewController" customModule="appRunClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-UK-heV">
+                                <rect key="frame" x="16" y="57.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGb-VD-Jny">
+                                <rect key="frame" x="314" y="45" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7w4-xy-KVe"/>
+                                    <constraint firstAttribute="width" constant="45" id="J2l-h3-2Yo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedContactButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MgC-pg-K2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-gb-EVI">
+                                <rect key="frame" x="259" y="45" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="AvI-B6-SjN"/>
+                                    <constraint firstAttribute="width" constant="45" id="WuD-zw-ftb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedConversationButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eNW-eK-xJI"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cA3-hm-Qhl">
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CiC-fX-m8d">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cA3-hm-Qhl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6fU-7K-2Wu"/>
+                            <constraint firstItem="cA3-hm-Qhl" firstAttribute="top" secondItem="hY8-gb-EVI" secondAttribute="bottom" constant="20" id="FHG-GN-hgC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cA3-hm-Qhl" secondAttribute="trailing" id="GdU-HJ-XaV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bGb-VD-Jny" secondAttribute="trailing" constant="16" id="Msv-E4-gWp"/>
+                            <constraint firstItem="KmK-UK-heV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Npl-YL-KJp"/>
+                            <constraint firstItem="bGb-VD-Jny" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="VI6-kb-DwZ"/>
+                            <constraint firstItem="KmK-UK-heV" firstAttribute="centerY" secondItem="hY8-gb-EVI" secondAttribute="centerY" id="nEQ-NY-NFM"/>
+                            <constraint firstItem="hY8-gb-EVI" firstAttribute="top" secondItem="bGb-VD-Jny" secondAttribute="top" id="nfL-8P-XqG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cA3-hm-Qhl" secondAttribute="bottom" id="oh6-UT-axA"/>
+                            <constraint firstItem="bGb-VD-Jny" firstAttribute="leading" secondItem="hY8-gb-EVI" secondAttribute="trailing" constant="10" id="yOC-IS-GAd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chatLabel" destination="KmK-UK-heV" id="1sD-U1-TJV"/>
+                        <outlet property="collectionView" destination="cA3-hm-Qhl" id="zOD-2W-iAi"/>
+                        <outlet property="contactButton" destination="bGb-VD-Jny" id="Hrt-G4-TLd"/>
+                        <outlet property="conversationButton" destination="hY8-gb-EVI" id="lCb-lF-6Yn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="-2.2488755622188905"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

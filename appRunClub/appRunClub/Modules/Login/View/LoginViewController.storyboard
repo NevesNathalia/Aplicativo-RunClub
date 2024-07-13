@@ -55,7 +55,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="tappedForgotPasswordButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nOM-Np-ipD"/>
+                                    <action selector="tappedForgetPasswordButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nOM-Np-ipD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2O-Sq-pvp">

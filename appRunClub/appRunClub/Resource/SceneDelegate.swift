@@ -24,8 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = navigationController
         } else {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let welcomeViewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
-            let navigationController = UINavigationController(rootViewController: welcomeViewController)
+            let viewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
+            let navigationController = UINavigationController(rootViewController: viewController)
             window?.rootViewController = navigationController
         }
         

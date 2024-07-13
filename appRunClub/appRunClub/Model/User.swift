@@ -2,16 +2,18 @@
 //  User.swift
 //  appRunClub
 //
-//  Created by Nathalia Neves on 17/04/24.
+//  Created by Nathalia Neves on 11/07/24.
 //
 
 import Foundation
-import UIKit
 
-struct User {
-    var image: UIImage?
+class User {
+    
     var name: String?
-    var message: String?
-    var location: String?
-    var description: String?
+    var email: String?
+
+    init(dictionary: [String: Any]) {
+        self.name = dictionary["nome"] as? String
+        self.email = dictionary["email"] as? String
+    }
 }

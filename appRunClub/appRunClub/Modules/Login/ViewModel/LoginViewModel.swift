@@ -7,9 +7,8 @@
 
 import UIKit
 
-class LoginViewModel {
+class LoginViewModel: NSObject {
     
-  
     public func validadeEmail(_ email: String) -> Bool {
         if email.isEmpty || ((!email.localizedStandardContains("@")) || (!email.localizedStandardContains(".com"))) {
             return false
